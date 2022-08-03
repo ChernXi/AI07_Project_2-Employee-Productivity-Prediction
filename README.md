@@ -5,7 +5,7 @@ The data is collected from European country at the year of 1978.
 You can get the data from [here](https://archive.ics.uci.edu/ml/datasets/Productivity+Prediction+of+Garment+Employees).
 
 ## Summary of the Dataset
-There are 15 attributes in this dataset. We will make use of the first 14 attributes as the features, and use them to launch a multilinear regression traning by using a dense neural network. Our target is to train out a model that can predict the actual productivity, which is the last attribute if the dataset with an mean absolute error percentage less than 10%.
+There are 15 attributes in this dataset. We will make use of the first 14 attributes as the features, and use them to launch a multilinear regression traning by using a dense neural network. Our goal is to train out a model that can predict the actual productivity, which is the last attribute of the dataset, with our targeted mean absolute error percentage less than 10%.
 
 The 15 attributes in dataset are summarized as below.
 
