@@ -25,6 +25,9 @@ The 15 attributes in dataset are summarized as below.
 14 idle_men : The number of workers who were idle due to production interruption <br>
 15 actual_productivity : The actual % of productivity that was delivered by the workers. It ranges from 0-1. <br>
 
+## Model Summary
+![image](https://user-images.githubusercontent.com/108325848/184591882-f8cbf66b-e746-4519-854d-a883e284eb96.png)
+
 ## Result
 Performance of the model:<br>
 ![image](https://user-images.githubusercontent.com/108325848/184591256-e0c41270-c6c7-4e61-b08d-b9d72c2ecdb7.png)
