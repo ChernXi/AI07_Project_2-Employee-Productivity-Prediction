@@ -28,8 +28,8 @@ The 15 attributes in dataset are summarized as below.
 ## Model Summary
 ![image](https://user-images.githubusercontent.com/108325848/184591882-f8cbf66b-e746-4519-854d-a883e284eb96.png)
 
-## Result
-### Sewing Model
+# Result
+## Sewing Model
 Performance of the model:<br>
 ![image](https://user-images.githubusercontent.com/108325848/184591256-e0c41270-c6c7-4e61-b08d-b9d72c2ecdb7.png)
 
@@ -39,8 +39,9 @@ Predicted Productivity vs Actual Productivity(Using Test data only):<br>
 Tensorboard result:<br>
 ![image](https://user-images.githubusercontent.com/108325848/184590861-6216dc3c-18f6-466b-8a6b-a345be439580.png)
 
-### Finishing Model
-![image](https://user-images.githubusercontent.com/108325848/187704704-39805721-d8ce-4bb3-a75c-42062d23c3d0.png)
+## Finishing Model
+![image](https://user-images.githubusercontent.com/108325848/187705441-fb434591-a533-4c00-b940-3fc27c7ef31f.png)
+
 
 
 
