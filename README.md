@@ -40,8 +40,8 @@ Tensorboard result:<br>
 ![image](https://user-images.githubusercontent.com/108325848/184590861-6216dc3c-18f6-466b-8a6b-a345be439580.png)
 
 ## Finishing Model
-![image](https://user-images.githubusercontent.com/108325848/187705441-fb434591-a533-4c00-b940-3fc27c7ef31f.png)
-The shaded region is surrounded by a 95% confidence interval, within which we are 95% certain that the **mean value** of prediction lies.
+![image](https://user-images.githubusercontent.com/108325848/187705441-fb434591-a533-4c00-b940-3fc27c7ef31f.png)<br>
+The shaded region is surrounded by a 95% confidence interval, within which we are 95% certain that the **mean value** of prediction lies.<br>
 This shall not be confused with the dotted line, which is the 95% prediction interval, within which 95% of our prediction data is contained.
 
 
