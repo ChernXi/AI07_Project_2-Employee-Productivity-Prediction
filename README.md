@@ -34,7 +34,7 @@ Performance of the model:<br>
 ![image](https://user-images.githubusercontent.com/108325848/187818155-987ac567-a591-4c29-bcdb-46713ea8394f.png)<br>
 ![image](https://user-images.githubusercontent.com/108325848/187818040-9d7649d7-e8fc-4119-b2c3-feca82dcaa2a.png)<br>
 
-![image](https://user-images.githubusercontent.com/108325848/187817943-6a3bcb6c-050a-4135-81da-da08c2c6f74e.png)<br>
+![image](https://user-images.githubusercontent.com/108325848/187819200-d1839d0e-8602-4d72-8530-963648cd29c5.png)<br>
 
 The shaded region is surrounded by a 95% confidence interval, within which we are 95% certain that the **mean value** of prediction lies.<br>
 This shall not be confused with the dotted line, which is the 95% prediction interval, within which 95% of our prediction data is contained.
@@ -46,6 +46,12 @@ Performance of the model:<br>
 
 ![image](https://user-images.githubusercontent.com/108325848/187712523-078f35c1-7cea-4707-bcdb-a69b0e7a0bd2.png)<br>
 
+## Conclusion
+"All model are wrong, but some are useful."~[George Box](https://en.wikipedia.org/wiki/All_models_are_wrong)<br>
+
+The sewing model is reasonably well fit, as evidenced by the 95% confidence interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.029 and a mean absolute percentage error of about 5%. <br> 
+
+The finishing model is not fitting so well, as the 95% confidence interval does not pass through the origin and the majority of prediction data appears to be less convergent. The linear fit, on the other hand, shows that the prediction increases linearly with the real data. So it stands to reason that the model has the potential to be improved if more data is provided. <br>  
 
 
 
