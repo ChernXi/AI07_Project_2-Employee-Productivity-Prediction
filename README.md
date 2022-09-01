@@ -31,13 +31,15 @@ The differences between the models are all stemed from their input data. <br>
 The data from both models were preprocessed through a slightly different way.<br>
 The commonalities and differences of the data preprocessing process of the both model are summarized as below: <br>
 
-|            Data\Model             |                  Sewing Model                    |                    Finishing Model                     |
-|              :---:                |                      :---:                       |                         :---:                          |
-|            Input data             |             Sewing Department Data               |Finishing Department Data : Sewing Department Data = 2:1|             |
-|         Typo Error Fixed          |                       Yes                        |                          same                          |
-|       wip(work in progress)       |               Using original Data                |                 Classified into 3 groups               |
-|               Date                |         Indexed by using chronological order     |                          same                          |
-|            day(weekday)           |begin with first consecutive working day(Saturday)|                          same                          |
+|            Data\Model             |                  Sewing Model                    |                        Finishing Model                         |
+|              :---:                |                      :---:                       |                             :---:                              |
+|            input data             |             Sewing Department Data               |2 X Finishing Department Training Data + Sewing Department Data |
+|         typo error fixed          |                       Yes                        |                              same                              |
+|       wip(work in progress)       |               Using original Data                |                     Classified into 3 groups                   |
+|               date                |         Indexed by using chronological order     |                              same                              |
+|            day(weekday)           |begin with first consecutive working day(Saturday)|                              same                              |
+| quarter(index of week in a month) |               Changed to integers                |                              same                              |
+|
 
 ### The Summary of pipeline of both models 
 ![image](https://user-images.githubusercontent.com/108325848/187822412-7e87e61d-62b6-4aeb-9831-c8d02df22f05.png)
