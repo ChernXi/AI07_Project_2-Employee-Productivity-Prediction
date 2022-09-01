@@ -26,24 +26,24 @@ The 15 attributes in dataset are summarized as below.
 15 actual_productivity : The actual % of productivity that was delivered by the workers. It ranges from 0-1. <br>
 
 ## Model Summary
-### Both Sewing Model and Finishing Model
+### Both Productivity Model
 ![image](https://user-images.githubusercontent.com/108325848/187822412-7e87e61d-62b6-4aeb-9831-c8d02df22f05.png)
 
 ## Result
-### Sewing Model
+### Sewing Department Productivity Model
 Performance of the model:<br>
-![image](https://user-images.githubusercontent.com/108325848/187818155-987ac567-a591-4c29-bcdb-46713ea8394f.png)<br>
-![image](https://user-images.githubusercontent.com/108325848/187818040-9d7649d7-e8fc-4119-b2c3-feca82dcaa2a.png)<br>
+![image](https://user-images.githubusercontent.com/108325848/187825456-fff0cc2b-6e73-4ab6-825e-a1e5a7c4b00b.png)<br>
+![image](https://user-images.githubusercontent.com/108325848/187825574-d4d66107-949c-4db7-9e58-3e7f9f684276.png)<br>
 
 ![image](https://user-images.githubusercontent.com/108325848/187819200-d1839d0e-8602-4d72-8530-963648cd29c5.png)<br>
 
 The shaded region is surrounded by a 95% confidence interval, within which we are 95% certain that the **mean value** of prediction lies.<br>
 This shall not be confused with the dotted line, which is the 95% prediction interval, within which 95% of our prediction data is contained.
 
-### Finishing Model
+### Finishing Department Productivity Model
 Performance of the model:<br>
-![image](https://user-images.githubusercontent.com/108325848/187713121-4dad4cd0-bc1f-4f25-a8e8-cef52ebfff7a.png)<br>
-![image](https://user-images.githubusercontent.com/108325848/187818313-85ecd2c0-c0a9-4c40-ab86-e56663897097.png)<br>
+![image](https://user-images.githubusercontent.com/108325848/187825655-aa603b1f-1b59-4981-9cb7-2d397b26d6ab.png)<br>
+![image](https://user-images.githubusercontent.com/108325848/187825731-c99476ac-a8c5-48b8-a07a-2d1951081c17.png)<br>
 
 ![image](https://user-images.githubusercontent.com/108325848/187712523-078f35c1-7cea-4707-bcdb-a69b0e7a0bd2.png)<br>
 
