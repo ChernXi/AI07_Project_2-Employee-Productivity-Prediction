@@ -91,7 +91,7 @@ The differences between the models all stem from their data pipeline, as summari
     <th>train_test_split</th><td align="center">Test_size = 0.2</td>
     <td align="center">Test_size = 0.1 (due to the lack of training data from finishing department)</td>
   </tr>
-</table>
+</table><br>
 
 ### 5.2. Models' pipeline 
 Both models mentioned above are dense neural network models that are constructed by using the functional API approach.<br>
