@@ -31,18 +31,22 @@ The 15 attributes in dataset are summarized as below.
 # Result
 ## Sewing Model
 Performance of the model:<br>
-![image](https://user-images.githubusercontent.com/108325848/184591256-e0c41270-c6c7-4e61-b08d-b9d72c2ecdb7.png)<br>
+![image](https://user-images.githubusercontent.com/108325848/187818155-987ac567-a591-4c29-bcdb-46713ea8394f.png)<br>
+![image](https://user-images.githubusercontent.com/108325848/187818040-9d7649d7-e8fc-4119-b2c3-feca82dcaa2a.png)<br>
 
-![image](https://user-images.githubusercontent.com/108325848/184591082-da0306f6-3a2a-41d3-93ab-9b0ac64657a4.png)<br>
+![image](https://user-images.githubusercontent.com/108325848/187817943-6a3bcb6c-050a-4135-81da-da08c2c6f74e.png)<br>
+
+The shaded region is surrounded by a 95% confidence interval, within which we are 95% certain that the **mean value** of prediction lies.<br>
+This shall not be confused with the dotted line, which is the 95% prediction interval, within which 95% of our prediction data is contained.
 
 ## Finishing Model
 Performance of the model:<br>
 ![image](https://user-images.githubusercontent.com/108325848/187713121-4dad4cd0-bc1f-4f25-a8e8-cef52ebfff7a.png)<br>
+![image](https://user-images.githubusercontent.com/108325848/187818313-85ecd2c0-c0a9-4c40-ab86-e56663897097.png)<br>
 
 ![image](https://user-images.githubusercontent.com/108325848/187712523-078f35c1-7cea-4707-bcdb-a69b0e7a0bd2.png)<br>
 
-The shaded region is surrounded by a 95% confidence interval, within which we are 95% certain that the **mean value** of prediction lies.<br>
-This shall not be confused with the dotted line, which is the 95% prediction interval, within which 95% of our prediction data is contained.
+
 
 
 
