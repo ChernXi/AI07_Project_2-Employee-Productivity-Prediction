@@ -26,10 +26,10 @@ The 15 attributes in dataset are summarized as below.
 15 actual_productivity : The actual % of productivity that was delivered by the workers. It ranges from 0-1. <br>
 
 ## Model Summary
-Two models, namely the "Sewing Department Productivity Model"(a.k.a Sewing Model) and the "Finishing Department Productivity Model"(a.k.a Finishing Model) were constructed using the same model pipeline. <br>
-The differences between the models are all stemed from their input data. <br>
-The data from both models were preprocessed through a slightly different way.<br>
-The commonalities and differences of the data preprocessing process of the both model are summarized as below: <br>
+Two models, namely the "Sewing Department Productivity Model" (a.k.a. Sewing Model) and the "Finishing Department Productivity Model" (a.k.a. Finishing Model), were constructed using the same model pipeline. <br>
+The differences between the models all stem from their input data.<br>
+The two models' input data were preprocessed differently, and their preprocessing procedures can be summarised as follows:<br>
+
 
 |            Data\Model             |                     Sewing Model                       |                        Finishing Model                         |
 |              :---:                |                         :---:                          |                             :---:                              |
