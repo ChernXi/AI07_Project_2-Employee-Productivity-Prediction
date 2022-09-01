@@ -141,7 +141,7 @@ The success will roll up and morally encourage the employees to perform better, 
 ## Conclusion
 We have successfully created a good model(the Sewing-Model) with high validation accuracy(validation mean absolute percentage error = 5%, MAE = 0.029) to predict the sewing team productivity in the future. Can this model be used to predict the productivity of all sewing teams in the European garment industry? We can put this question to the test by using data from other sewing teams. One thing is certain: the more sewing team data we collect, the more accurate the model we build.<br>
 
-The Finishing-Model, on the other hand, may be unsatisfactory with a validation mean absolute percentage error of 15%, but as we can see from the graph, it is not completely useless because we are 95% certain that the real data will fall within a certain interval. For example, if the prediction of productivity is 1.0, we are 95% sure that the actual data falls between 0.6 and 1.1, so it can be a good estimate. More data, specifically "wip" data, is required to build a better model.
+The Finishing-Model, on the other hand, may be unsatisfactory with a validation mean absolute percentage error of 15%, but as we can see from the graph, it is not completely useless because we are 95% certain that the real data will fall within a certain interval. For example, if the prediction of productivity is 0.2, we are 95% sure that the actual data falls between 0.1 and 0.7, so it can be a good estimate. More data, specifically "wip" data, is required to build a better model.
 
 
 
