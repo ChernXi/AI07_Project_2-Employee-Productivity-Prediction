@@ -26,7 +26,12 @@ The 15 attributes in dataset are summarized as below.
 15 actual_productivity : The actual % of productivity that was delivered by the workers. It ranges from 0-1. <br>
 
 ## Model Summary
-### Both Productivity Model
+Two models, namely the "Sewing Department Productivity Model"(a.k.a Sewing Model) and the "Finishing Department Productivity Model"(a.k.a Finishing Model) were constructed using the same model pipeline. <br>
+The difference between the model is all about input data. <br>
+The data from both models were preprocessed through a slightly different as summarized below: <br>
+
+
+### The Summary of pipeline of both models 
 ![image](https://user-images.githubusercontent.com/108325848/187822412-7e87e61d-62b6-4aeb-9831-c8d02df22f05.png)
 
 ## Result
@@ -50,9 +55,9 @@ Performance of the model:<br>
 ## Conclusion
 "All models are wrong, but some are useful."~[George Box](https://en.wikipedia.org/wiki/All_models_are_wrong)<br>
 
-The sewing department productivity model is reasonably well fit, as evidenced by the 95% confidence interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.029 and a mean absolute percentage error of about 5%. <br> 
+The sewing model is reasonably well fit, as evidenced by the 95% confidence interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.029 and a mean absolute percentage error of about 5%. <br> 
 
-The finishing department productivity model(abbreviated as fisnishing model) does not fit well because the 95% confidence interval does not pass through the origin and the majority of the prediction data appears less convergent. Besides, it has a validation mean absolute percentage error of 0.103 and a mean absolute percentage error of about 15%.<br>
+The finishing model does not fit well because the 95% confidence interval does not pass through the origin and the majority of the prediction data appears less convergent. Besides, it has a validation mean absolute percentage error of 0.103 and a mean absolute percentage error of about 15%.<br>
 
 Whatsoever, the linear fit in the finishing model indicates that the prediction data increases linearly with the real data. Furthermore, the 0.61 correlation between the prediction data and the real data suggests that the model isn't all that bad. As a result, it stands to reason that the finishing model can be improved if more data is provided. <br>  
 
