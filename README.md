@@ -33,7 +33,7 @@ The commonalities and differences of the data preprocessing process of the both 
 
 |            Data\Model             |                     Sewing Model                       |                        Finishing Model                         |
 |              :---:                |                         :---:                          |                             :---:                              |
-|            input data             |                Sewing Department Data                  |2 X Finishing Department Training Data + Sewing Department Data |
+|            input data             |                Sewing Department Data                  |2 \times Finishing Department Training Data + Sewing Department Data |
 |         typo error fixed          |                          Yes                           |                              same                              |
 |       wip(work in progress)       |                  Using original Data                   |                     Classified into 3 groups                   |
 |               date                |            Indexed by using chronological order        |                              same                              |
