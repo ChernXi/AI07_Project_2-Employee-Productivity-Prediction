@@ -12,10 +12,10 @@ In addition, a good prediction model also played a pivotal role in the future de
 (iv) As a demonstration to show how to do data cleaning, data preparation, data analysis and data exploration.<br>
 
 ## 3. The Garment Employee Dataset
-### 3.1 Download link
+### 3.1. Download link
 You can get the dataset download link from [here](https://archive.ics.uci.edu/ml/datasets/Productivity+Prediction+of+Garment+Employees).
 
-### 3.2 Summary of the Dataset
+### 3.2. Summary of the Dataset
 The data is collected from European country at the year of 2015.
 There are 15 attributes in this dataset. We will make use of the first 14 attributes as the features, and use them to launch a multilinear regression traning by using a dense neural network. Our goal is to train out a model that can predict the actual productivity, which is the last attribute of the dataset, with our targeted mean absolute error percentage less than 10%.
 
@@ -37,14 +37,18 @@ The 15 attributes in dataset are summarized as below.
 14 idle_men : The number of workers who were idle due to production interruption <br>
 15 actual_productivity : The actual % of productivity that was delivered by the workers. It ranges from 0-1. <br>
 
-## Model Summary
-Two models, namely the "Sewing Department Productivity Model" (a.k.a. Sewing Model) and the "Finishing Department Productivity Model" (a.k.a. Finishing Model), were constructed using the same model pipeline. <br>
-The differences between the models all stem from their input data.<br>
-The two models' input data were preprocessed differently, and their preprocessing procedures can be summarised as follows:<br>
+## 4. IDE and Framework
+[Google Colab](https://colab.research.google.com/) is used as the integrated development environment for this project.
+The main frameworks utilised were TensorFlow Keras, Pandas, Numpy, Scikit-Learn, and Numpy.
+
+## 5. Methodology
+### 5.1. Data Pipeline
+Two models, namely the "Sewing Department Productivity Model" (a.k.a. Sewing Model) and the "Finishing Department Productivity Model" (a.k.a. Finishing Model), were constructed separately by using the same model pipeline. <br>
+The differences between the models all stem from their data pipeline, as summarized as follows:<br>
 
 <table class="center" div align="center">
   <tr>
-    <th colspan="3">Data Preprocessing Procedures</th>
+    <th colspan="3">Data Pipeline</th>
   </tr>                                                          
   <tr>
     <th>Data\Model</th><th>Sewing Model</th><th>Finishing Model</th>
@@ -83,11 +87,13 @@ The two models' input data were preprocessed differently, and their preprocessin
   </tr>
 </table>
 
-### Summary of the Models' pipeline 
+### 5.2. Models' pipeline 
+Both models mentioned above are dense neural network models that are constructed by using the functional API approach.<br>
+Below is the summary of the models:<br>
 ![image](https://user-images.githubusercontent.com/108325848/187822412-7e87e61d-62b6-4aeb-9831-c8d02df22f05.png)
 
-## Result
-### Sewing Department Productivity Model
+## 6. Result
+### 6.1. Sewing Department Productivity Model
 Performance of the model:<br>
 ![image](https://user-images.githubusercontent.com/108325848/187825456-fff0cc2b-6e73-4ab6-825e-a1e5a7c4b00b.png)<br>
 ![image](https://user-images.githubusercontent.com/108325848/187825574-d4d66107-949c-4db7-9e58-3e7f9f684276.png)<br>
@@ -97,14 +103,14 @@ Performance of the model:<br>
 The shaded region is surrounded by a 95% confidence interval, within which we are 95% certain that the **mean value** of prediction lies.<br>
 This shall not be confused with the dotted line, which is the 95% prediction interval, within which 95% of our prediction data is contained.
 
-### Finishing Department Productivity Model
+### 6.2. Finishing Department Productivity Model
 Performance of the model:<br>
 ![image](https://user-images.githubusercontent.com/108325848/187825655-aa603b1f-1b59-4981-9cb7-2d397b26d6ab.png)<br>
 ![image](https://user-images.githubusercontent.com/108325848/187825731-c99476ac-a8c5-48b8-a07a-2d1951081c17.png)<br>
 
 ![image](https://user-images.githubusercontent.com/108325848/187712523-078f35c1-7cea-4707-bcdb-a69b0e7a0bd2.png)<br>
 
-## Conclusion
+## 7. Conclusion
 "All models are wrong, but some are useful."~[George Box](https://en.wikipedia.org/wiki/All_models_are_wrong)<br>
 
 The sewing model is reasonably well fit, as evidenced by the 95% confidence interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.029 and a mean absolute percentage error of about 5%. <br> 
