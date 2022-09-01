@@ -26,10 +26,11 @@ The 15 attributes in dataset are summarized as below.
 15 actual_productivity : The actual % of productivity that was delivered by the workers. It ranges from 0-1. <br>
 
 ## Model Summary
-![image](https://user-images.githubusercontent.com/108325848/184591882-f8cbf66b-e746-4519-854d-a883e284eb96.png)
+### Both Sewing Model and Finishing Model
+![image](https://user-images.githubusercontent.com/108325848/187822412-7e87e61d-62b6-4aeb-9831-c8d02df22f05.png)
 
-# Result
-## Sewing Model
+## Result
+### Sewing Model
 Performance of the model:<br>
 ![image](https://user-images.githubusercontent.com/108325848/187818155-987ac567-a591-4c29-bcdb-46713ea8394f.png)<br>
 ![image](https://user-images.githubusercontent.com/108325848/187818040-9d7649d7-e8fc-4119-b2c3-feca82dcaa2a.png)<br>
@@ -39,7 +40,7 @@ Performance of the model:<br>
 The shaded region is surrounded by a 95% confidence interval, within which we are 95% certain that the **mean value** of prediction lies.<br>
 This shall not be confused with the dotted line, which is the 95% prediction interval, within which 95% of our prediction data is contained.
 
-## Finishing Model
+### Finishing Model
 Performance of the model:<br>
 ![image](https://user-images.githubusercontent.com/108325848/187713121-4dad4cd0-bc1f-4f25-a8e8-cef52ebfff7a.png)<br>
 ![image](https://user-images.githubusercontent.com/108325848/187818313-85ecd2c0-c0a9-4c40-ab86-e56663897097.png)<br>
