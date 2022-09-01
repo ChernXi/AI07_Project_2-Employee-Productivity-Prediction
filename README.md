@@ -1,10 +1,22 @@
-# AI07_Project_2-Employee-Productivity-Prediction
+# Productivity Prediction of Garment Employees Data Set 
 
-This project aims to show how to construct a neural network model to predict the Employee Productivity in European garment industry.
-The data is collected from European country at the year of 1978.
-You can get the data from [here](https://archive.ics.uci.edu/ml/datasets/Productivity+Prediction+of+Garment+Employees).
+## 1. Motivation
+The garment industry is an essential industry in human civilization and has a huge global demand. <br>
+It is important for the big garment production companies to track, analyze, and predict the productivity of their working teams to estimate their garment production capacity and ensure that production is completed on time. This is essential to keep the company's reputation and avoid paying breach of contract losses. <br>
+In addition, a good prediction model also played a pivotal role in the future development of the garment company as it provided the information to streamline the production lines and optimize the production efficiency.
 
-## Summary of the Dataset
+## 2. Objective
+(i) Construct a good prediction model that can be used to predict the employee productivity in European garment Industry.<br>
+(ii) Data mining to determine which attributes in the European garment industry are highly correlated with employee productivity and what their optimum value is.<br>
+(iii) As a demonstration to show how to construct a dense neural network.<br>
+(iv) As a demonstration to show how to do data cleaning, data preparation, data analysis and data exploration.<br>
+
+## 3. The Garment Employee Dataset
+### 3.1 Download link
+You can get the dataset download link from [here](https://archive.ics.uci.edu/ml/datasets/Productivity+Prediction+of+Garment+Employees).
+
+### 3.2 Summary of the Dataset
+The data is collected from European country at the year of 2015.
 There are 15 attributes in this dataset. We will make use of the first 14 attributes as the features, and use them to launch a multilinear regression traning by using a dense neural network. Our goal is to train out a model that can predict the actual productivity, which is the last attribute of the dataset, with our targeted mean absolute error percentage less than 10%.
 
 The 15 attributes in dataset are summarized as below.
