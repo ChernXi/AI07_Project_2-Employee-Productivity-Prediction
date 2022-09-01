@@ -7,7 +7,7 @@ In addition, a good prediction model also played a pivotal role in the future de
 
 ## 2. Objective
 (i) Construct a good prediction model that can be used to predict the employee productivity in European garment Industry.<br>
-(ii) Data mining to determine which attributes in the European garment industry are highly correlated with employee productivity and what their optimum value is.<br>
+(ii) Data mining to determine which attributes in the European garment industry are highly correlated with employee productivity and what their optimal value is.<br>
 (iii) As a demonstration to show how to construct a dense neural network.<br>
 (iv) As a demonstration to show how to do data cleaning, data preparation, data analysis and data exploration.<br>
 
@@ -110,7 +110,7 @@ Performance of the model:<br>
 
 ![image](https://user-images.githubusercontent.com/108325848/187712523-078f35c1-7cea-4707-bcdb-a69b0e7a0bd2.png)<br>
 
-## 7. Conclusion
+## 7. Analysis and discussion
 "All models are wrong, but some are useful."~[George Box](https://en.wikipedia.org/wiki/All_models_are_wrong)<br>
 
 The sewing model is reasonably well fit, as evidenced by the 95% confidence interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.029 and a mean absolute percentage error of about 5%. <br> 
@@ -118,6 +118,26 @@ The sewing model is reasonably well fit, as evidenced by the 95% confidence inte
 The finishing model does not fit well because the 95% confidence interval does not pass through the origin and the majority of the prediction data appears less convergent. Besides, it has a validation mean absolute percentage error of 0.103 and a mean absolute percentage error of about 15%.<br>
 
 Whatsoever, the linear fit in the finishing model indicates that the prediction data increases linearly with the real data. Furthermore, the 0.61 correlation between the prediction data and the real data suggests that the model isn't all that bad. Therefore, it stands to reason that the finishing model can be improved if more data is provided. <br>  
+
+By exploring the data, we know that the main difference between the finishing model and the sewing model is that all "wip" data is missing in the finishing model. <br>
+The result of poor fitting in the finising model indicates that "wip" is indeed a crucial variable that is highly correlated to employee productivity in the European garment industry.<br>
+
+We can also check the other attributes/variables in a similar way. By drawing out the targeted variable from the training data, we train the model again, and observe the difference in the accuracy of prediction. <br>
+
+Some may argue that the difference between the results of the sewing model and the finishing model may also be caused by the difference in team attributes(the mean productivity), but I actually did check this argument by using the same mean in both models. The sewing model's prediction accuracy remained relatively same as a result, but the model I presented in the data pipeline is in fact marginally more accurate.  This forces us to conclude that the missing wip data is the main cause of the inaccuracy of the finishing model, if compared to the sewing model.<br>
+
+Last but not least, if there is an optimal value of wip data, We can check this by generating some lists of sewing data with all attributes fixed but the wip value different. Then we make use of our fairly well fitted sewing data to predict the productivities of each entry in the list. Then we can gather the optimal value from all the lists to find its mean. This mean will be the overall optimal(ideal) value of the wip data.<br>
+
+Why is it advantageous to obtain the optimum value of "wip" (work-in-progress) then? The work-in-progress could be distributed to other teams by the manager, ensuring that most teams have the right amount of work to do and can therefore maximize their production.<br>
+
+The success will roll up and morally encourage the employees to perform better, hence causing the company to win the race against their peers. All of this could stem from one key point: using data mining in their business to determine the optimal value of variables(e.g., work in progress, incentive, overtime) for their employees in order to maximise productivity.<br>
+
+## Conclusion
+We have successfully make a good model that have reasonably good validation accuracy(validation mean absolute percentage error = 5%, MAE=0.029) to predict the sewing team productivity in the future. Can this result be generalized to all sewing team in the European garment industry? We may test this argument by using the data of other sewing teams. One thing for sure is that, the more data of sewing team we have, the more accurate is the model we build.<br>
+
+On the other hand, the finishing model may be unsastifactory with a validation mean absolute percentage error of 15%, but as we can see from the graph, we know that it is not totally useless, because we are 95% certain that the data of a prediction will fall into a certain interval. For example, if the prediction of productivity is 1.0, we are 95% sure that the real data fall in the interval between 0.6 and 1.1, so it can be a good estimation. To construct a better model, again, we need more data, in particular the "wip" data.<br>
+
+
 
 
 
