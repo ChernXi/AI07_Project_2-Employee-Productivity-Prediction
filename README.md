@@ -30,19 +30,46 @@ Two models, namely the "Sewing Department Productivity Model" (a.k.a. Sewing Mod
 The differences between the models all stem from their input data.<br>
 The two models' input data were preprocessed differently, and their preprocessing procedures can be summarised as follows:<br>
 
-
-|            Data\Model             |                     Sewing Model                       |                        Finishing Model                         |
-|              :---:                |                         :---:                          |                             :---:                              |
-|         **input data**            |              Sewing department data                |2 $\times$ Finishing department training data + sewing department data |
-|       **typo error fixed**        |                          Yes                           |                              Same                              |
-|     **wip(work in progress)**     |                  Using original data                   |                     Classified into 3 groups                   |
-|             **date**              |            Indexed by using chronological order        |                              Same                              |
-|          **day(weekday)**         |Begin with the first consecutive working day in a week(Saturday)|                           Same                             |
-|**quarter(index of week in a month)**|                  Changed to integers                   |                              Same                              |
-|             **month**             |                  Extracted from date                   |                              Same                              |
-|         **day(in months)**        |                  Extracted from date                   |                              Same                              |
-|    **team**      |Replaced by the average productivity of the corresponding sewing team|Replaced by the average productivity of the corresponding departmental team| 
-|       **train_test_split**        |              Test_size = 0.2             | Test_size = 0.1 (due to the lack of training data from finishing department) |
+<table class="center" div align="center">
+  <tr>
+    <th colspan="3">Data Preprocessing Procedures</th>
+  </tr>                                                          
+  <tr>
+    <th>Data\Model</th><th>Sewing Model</th><th>Finishing Model</th>
+  </tr>
+  <tr>
+    <th>input data</th><td align="center">Sewing department data</td><td align="center">2 $\times$ Finishing department training data + sewing department data</td>
+  </tr>
+  <tr>
+    <th>typo error fixed</th><td align="center">Yes</td><td align="center">Same</td>
+  </tr>
+  <tr>
+    <th>wip(work in progress)</th><td align="center">Using original data</td><td align="center">Classified into 3 groups</td>
+  </tr>
+  <tr>
+    <th>date</th><td align="center">Indexed by using chronological order</td><td align="center">Same</td>
+  </tr>
+  <tr>
+    <th>day(weekday)</th><td align="center">Begin with the first consecutive working day in a week(Saturday)</td><td align="center">Same</td>
+  </tr>
+  <tr>
+    <th>quarter(index of week in a month)</th><td align="center">Changed to integers</td><td align="center">Same</td>
+  </tr>
+  <tr>
+    <th>month(/th)<td align="center">Extracted from date</td><td align="center">Same</td>
+  </tr>
+  <tr>
+    <th>day(in months)</th><td align="center">Extracted from date</td><td align="center">Same</td>
+  </tr>
+  <tr>
+    <th>team</th><td align="center">Replaced by the average productivity of the corresponding sewing team</td>
+    <td align="center">Replaced by the average productivity of the corresponding departmental team</td>
+  </tr>
+  <tr>
+    <th>train_test_split</th><td align="center">Test_size = 0.2</td>
+    <td align="center">Test_size = 0.1 (due to the lack of training data from finishing department)</td>
+  </tr>
+</table>
 
 ### Summary of the Models' pipeline 
 ![image](https://user-images.githubusercontent.com/108325848/187822412-7e87e61d-62b6-4aeb-9831-c8d02df22f05.png)
