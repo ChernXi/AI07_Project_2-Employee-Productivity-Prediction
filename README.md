@@ -37,7 +37,7 @@ The two models' input data were preprocessed differently, and their preprocessin
 |         typo error fixed          |                          Yes                           |                              Same                              |
 |       wip(work in progress)       |                  Using original data                   |                     Classified into 3 groups                   |
 |               date                |            Indexed by using chronological order        |                              Same                              |
-|            day(weekday)           |   Begin with first consecutive working day(Saturday)   |                              Same                              |
+|            day(weekday)        | Begin with thefirst consecutive working day in a week.(Saturday) |                          Same                           |
 | quarter(index of week in a month) |                  Changed to integers                   |                              Same                              |
 |               month               |                  Extracted from date                   |                              Same                              |
 |           day(in months)          |                  Extracted from date                   |                              Same                              |
