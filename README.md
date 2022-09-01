@@ -44,7 +44,7 @@ The two models' input data were preprocessed differently, and their preprocessin
 |      team      |Replaced by the average productivity of the corresponding sewing team|Replaced by the average productivity of the corresponding departmental team| 
 |       train_test_split            |              Test_size = 0.2             | Test_size = 0.1 (due to the lack of training data from finishing department) |
 
-### The Summary of pipeline of both models 
+### Summary of the Models' pipeline 
 ![image](https://user-images.githubusercontent.com/108325848/187822412-7e87e61d-62b6-4aeb-9831-c8d02df22f05.png)
 
 ## Result
