@@ -33,16 +33,16 @@ The two models' input data were preprocessed differently, and their preprocessin
 
 |            Data\Model             |                     Sewing Model                       |                        Finishing Model                         |
 |              :---:                |                         :---:                          |                             :---:                              |
-|            input data             |              Sewing department data                |2 $\times$ Finishing department training data + sewing department data |
-|         typo error fixed          |                          Yes                           |                              Same                              |
-|       wip(work in progress)       |                  Using original data                   |                     Classified into 3 groups                   |
-|               date                |            Indexed by using chronological order        |                              Same                              |
-|           day(weekday)        |Begin with the first consecutive working day in a week(Saturday)|                           Same                             |
-| quarter(index of week in a month) |                  Changed to integers                   |                              Same                              |
-|               month               |                  Extracted from date                   |                              Same                              |
-|           day(in months)          |                  Extracted from date                   |                              Same                              |
-|      team      |Replaced by the average productivity of the corresponding sewing team|Replaced by the average productivity of the corresponding departmental team| 
-|       train_test_split            |              Test_size = 0.2             | Test_size = 0.1 (due to the lack of training data from finishing department) |
+|         **input data**            |              Sewing department data                |2 $\times$ Finishing department training data + sewing department data |
+|       **typo error fixed**        |                          Yes                           |                              Same                              |
+|     **wip(work in progress)**     |                  Using original data                   |                     Classified into 3 groups                   |
+|             **date**              |            Indexed by using chronological order        |                              Same                              |
+|          **day(weekday)**         |Begin with the first consecutive working day in a week(Saturday)|                           Same                             |
+|**quarter(index of week in a month)**|                  Changed to integers                   |                              Same                              |
+|             **month**             |                  Extracted from date                   |                              Same                              |
+|         **day(in months)**        |                  Extracted from date                   |                              Same                              |
+|    **team**      |Replaced by the average productivity of the corresponding sewing team|Replaced by the average productivity of the corresponding departmental team| 
+|       **train_test_split**        |              Test_size = 0.2             | Test_size = 0.1 (due to the lack of training data from finishing department) |
 
 ### Summary of the Models' pipeline 
 ![image](https://user-images.githubusercontent.com/108325848/187822412-7e87e61d-62b6-4aeb-9831-c8d02df22f05.png)
