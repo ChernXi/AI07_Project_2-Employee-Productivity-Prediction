@@ -27,8 +27,9 @@ The 15 attributes in dataset are summarized as below.
 
 ## Model Summary
 Two models, namely the "Sewing Department Productivity Model"(a.k.a Sewing Model) and the "Finishing Department Productivity Model"(a.k.a Finishing Model) were constructed using the same model pipeline. <br>
-The difference between the model is all about input data. <br>
-The data from both models were preprocessed through a slightly different as summarized below: <br>
+The differences between the models are all stemed from their input data. <br>
+The data from both models were preprocessed through a slightly different way.<br>
+The commonalities and differences of the data preprocessing process of the both model are summarized as below: <br>
 
 
 ### The Summary of pipeline of both models 
