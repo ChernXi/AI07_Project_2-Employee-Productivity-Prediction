@@ -134,7 +134,7 @@ Some may argue that the difference between the results of the Sewing-Model and t
 
 Last but not least, if there is an optimal value of wip data, We can check this by generating some lists of sewing data with all attributes fixed but the wip value different. Then we make use of our fairly well fitted sewing data to predict the productivities of each entry in the list. Then we can gather the optimal value from all the lists to find its mean. This mean will be the overall optimal(ideal) value of the wip data.<br>
 
-Why is it advantageous to obtain the optimum value of "wip" (work-in-progress) then? The work-in-progress could be distributed to other teams by the manager, ensuring that most teams have the right amount of work to do and can therefore maximize their production.<br>
+Why is it advantageous to obtain the optimal value of "wip" (work-in-progress) then? The work-in-progress could be distributed to other teams by the manager, ensuring that most teams have the right amount of work to do and can therefore maximize their production.<br>
 
 The success will roll up and morally encourage the employees to perform better, hence causing the company to win the race against their peers. All of this could stem from one key point: using data mining in their business to determine the optimal value of variables(e.g., work in progress, incentive, overtime) for their employees in order to maximise productivity.<br>
 
