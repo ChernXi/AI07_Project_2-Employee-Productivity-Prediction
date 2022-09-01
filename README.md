@@ -52,7 +52,8 @@ Performance of the model:<br>
 
 The sewing model is reasonably well fit, as evidenced by the 95% confidence interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.029 and a mean absolute percentage error of about 5%. <br> 
 
-The finishing model is not fitting so well, as the 95% confidence interval does not pass through the origin and the majority of prediction data appears to be less convergent. The linear fit, on the other hand, shows that the prediction increases linearly with the real data. So it stands to reason that the model has the potential to be improved if more data is provided. <br>  
+The finishing model is not fitting so well, as the 95% confidence interval does not pass through the origin and the majority of prediction data appears to be less convergent.  It has a validation mean absolute percentage error of 0.103 and a validation mean absolute percentage error of about 15%.<br>
+The linear fit, on the other hand, shows that the prediction of the finishing model increases linearly with the real data. So it stands to reason that the model has the potential to be improved if more data is provided. <br>  
 
 
 
