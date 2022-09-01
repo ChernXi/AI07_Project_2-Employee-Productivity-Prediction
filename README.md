@@ -41,7 +41,8 @@ The commonalities and differences of the data preprocessing process of the both 
 | quarter(index of week in a month) |                  Changed to integers                   |                              same                              |
 |               month               |                  extracted from date                   |                              same                              |
 |           day(in months)          |                  extracted from date                   |                              same                              |
-|                team               |replaced by the mean productivity of the corresponding sewing team| replaced by the mean productivity of each departmental team|   
+|      team      |replaced by the average productivity of the corresponding sewing team|replaced by the average productivity of the corresponding departmental team| 
+|       train_test_split            |              test_size = 0.2             | test_size = 0.1 (due to the lack of Training Data from finishing department) |
 
 ### The Summary of pipeline of both models 
 ![image](https://user-images.githubusercontent.com/108325848/187822412-7e87e61d-62b6-4aeb-9831-c8d02df22f05.png)
