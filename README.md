@@ -88,8 +88,8 @@ The differences between the models all stem from their data pipeline, as summari
     <td align="center">Replaced by the average productivity of the corresponding departmental team</td>
   </tr>
   <tr>
-    <th>train_test_split</th><td align="center">Test_size = 0.2</td>
-    <td align="center">Test_size = 0.1 (due to the lack of training data from finishing department)</td>
+    <th>train_test_split</th><td align="center">Test_size = 0.1 (a small test size is used due to the lacking of data)</td>
+    <td align="center">Test_size = 0.1 </td>
   </tr>
 </table><br>
 
@@ -104,7 +104,7 @@ Performance of the model:<br>
 ![image](https://user-images.githubusercontent.com/108325848/187825456-fff0cc2b-6e73-4ab6-825e-a1e5a7c4b00b.png)<br>
 ![image](https://user-images.githubusercontent.com/108325848/187825574-d4d66107-949c-4db7-9e58-3e7f9f684276.png)<br>
 
-![image](https://user-images.githubusercontent.com/108325848/187819200-d1839d0e-8602-4d72-8530-963648cd29c5.png)<br>
+![image](https://user-images.githubusercontent.com/108325848/188222506-62939316-3b29-42ef-b258-eb6c67369f6b.png)<br>
 
 The shaded region is surrounded by a 95% confidence interval, within which we are 95% certain that the **mean value** of prediction lies.<br>
 This shall not be confused with the dotted line, which is the 95% prediction interval, within which 95% of our prediction data is contained.
@@ -138,10 +138,12 @@ Why is it advantageous to obtain the optimal value of "wip" (work-in-progress) t
 
 The success will roll up and morally encourage the employees to perform better, hence causing the company to win the race against their peers. All of this could stem from one key point: using data mining in their business to determine the optimal value of variables(e.g., work in progress, incentive, overtime) for their employees in order to maximise productivity.<br>
 
+However, a general optimal "wip" value is less likely to exist, because the optimal value is the collective result of all other data. We can, in turn build a model that use the "wip" as the label, and "actual productivity"(wishful productivity) as one of the feature, than we are able to obtain the optimal "wip" value for a specific group of employee.  
+
 ## Conclusion
 We have successfully created a good model(the Sewing-Model) with high validation accuracy(validation mean absolute percentage error = 5%, MAE = 0.029) to predict the sewing team productivity in the future. Can this model be used to predict the productivity of all sewing teams in the European garment industry? We can put this question to the test by using data from other sewing teams. One thing is certain: the more sewing team data we collect, the more accurate the model we build.<br>
 
-The Finishing-Model, on the other hand, may be unsatisfactory with a validation mean absolute percentage error of 15%, but as we can see from the graph, it is not completely useless because we are 95% certain that the real data will fall within a certain interval. For example, if the prediction of productivity is 0.2, we are 95% sure that the actual data falls between 0.1 and 0.7, so it can be a good estimate. More data, specifically "wip" data, is required to build a better model.
+The Finishing-Model, on the other hand, may be unsatisfactory with a validation mean absolute percentage error of 15%, but as we can see from the graph, it is not completely useless because we are 95% certain that the real data will fall within a certain interval. For example, if the prediction of productivity is 0.2, we are 95% sure that the actual data falls between 0.1 and 0.7, so it can be a good estimate. More data, in particular the "wip" data, is required to build a better model.
 
 
 
