@@ -101,8 +101,8 @@ Below is the summary of the models:<br>
 ## 6. Result
 ### 6.1. Sewing Department Productivity Model
 Performance of the model:<br>
-![image](https://user-images.githubusercontent.com/108325848/187825456-fff0cc2b-6e73-4ab6-825e-a1e5a7c4b00b.png)<br>
-![image](https://user-images.githubusercontent.com/108325848/187825574-d4d66107-949c-4db7-9e58-3e7f9f684276.png)<br>
+![image](https://user-images.githubusercontent.com/108325848/188224403-68d22fb4-dff9-4481-a891-554bf96a3213.png)<br>
+![image](https://user-images.githubusercontent.com/108325848/188224518-1814f98d-1f88-43e6-92b9-ce346d040b03.png)<br>
 
 ![image](https://user-images.githubusercontent.com/108325848/188222506-62939316-3b29-42ef-b258-eb6c67369f6b.png)<br>
 
@@ -119,7 +119,7 @@ Performance of the model:<br>
 ## 7. Analysis and Discussion
 "All models are wrong, but some are useful."~[George Box](https://en.wikipedia.org/wiki/All_models_are_wrong)<br>
 
-The Sewing-Model is reasonably well fitted, as evidenced by the 95% confidence interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.029 and a mean absolute percentage error of about 5%. <br> 
+The Sewing-Model is reasonably well fitted, as evidenced by the 95% confidence interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.019 and a mean absolute percentage error of about 3%. <br> 
 
 The Finishing-Model does not fit well because the 95% confidence interval does not pass through the origin and the majority of the prediction data appears less convergent. Besides, it has a validation mean absolute percentage error of 0.103 and a mean absolute percentage error of about 15%.<br>
 
@@ -141,7 +141,7 @@ The success will roll up and morally encourage the employees to perform better, 
 However, a general optimal "wip" value is less likely to exist, because the optimal value is the collective result of all other data. We can, in turn build a model that use the "wip" as the label, and "actual productivity"(wishful productivity) as one of the feature, than we are able to obtain the optimal "wip" value for a specific group of employee.  
 
 ## Conclusion
-We have successfully created a good model(the Sewing-Model) with high validation accuracy(validation mean absolute percentage error = 5%, MAE = 0.029) to predict the sewing team productivity in the future. Can this model be used to predict the productivity of all sewing teams in the European garment industry? We can put this question to the test by using data from other sewing teams. One thing is certain: the more sewing team data we collect, the more accurate the model we build.<br>
+We have successfully created a good model(the Sewing-Model) with high validation accuracy(validation mean absolute percentage error = 3%, MAE = 0.019) to predict the sewing team productivity in the future. Can this model be used to predict the productivity of all sewing teams in the European garment industry? We can put this question to the test by using data from other sewing teams. One thing is certain: the more sewing team data we collect, the more accurate the model we build.<br>
 
 The Finishing-Model, on the other hand, may be unsatisfactory with a validation mean absolute percentage error of 15%, but as we can see from the graph, it is not completely useless because we are 95% certain that the real data will fall within a certain interval. For example, if the prediction of productivity is 0.2, we are 95% sure that the actual data falls between 0.1 and 0.7, so it can be a good estimate. More data, in particular the "wip" data, is required to build a better model.
 
