@@ -127,9 +127,9 @@ Now we have more features which has non-zero correlation with "actual productivi
 <p align="center"><img width="800" height="600" src="http://user-images.githubusercontent.com/108325848/188255573-f30fd5ec-09f7-4505-b6a5-134672163ff2.png"></p>
 
 #### 6.1.3. After Data Segmentation
-After data segmentation, the correlation between "incentive" and "actual productivity" become 10 times larger!
-Also, the correlation between "actual productivity" with the features such as "wip", "team","no of style change","idle time", and "day_no" is further improved.
-Despite there exists some minor decrease of the correlation between "actual productivity" with the features such as "no of worker", "month", and "day", the overall correlation betwwen the features and the "actual productivity" is greatly enhanced after the data segmentation.  
+After data segmentation, the correlation between "incentive" and "actual productivity" become 10 times larger!<br>
+Also, the correlation between "actual productivity" with the features such as "wip", "team","no of style change","idle time", and "day_no" is further improved.<br>
+Despite there exists some minor decrease of the correlation between "actual productivity" with the features such as "no of worker", "month", and "day", the overall correlation betwwen the features and the "actual productivity" is greatly enhanced after the data segmentation.<br>
 <p align="center"><img width="800" height="600" src="http://user-images.githubusercontent.com/108325848/188255829-89a37767-20b7-494e-9179-b3860d47ec4f.png"></p>
 
 ### 6.2. Sewing Department Productivity Model
