@@ -12,6 +12,8 @@ Furthermore, a good prediction model was critical in the future development of t
 </details>
 
 ## 2. Objective
+<details>
+<summary>click to show</summary>
   
 (i) Construct a good prediction model that can be used to predict the employee productivity in European garment Industry.<br>
 
@@ -21,9 +23,15 @@ Furthermore, a good prediction model was critical in the future development of t
 
 (iv) As a demonstration to show how to do data cleaning, data preparation, data analysis and data exploration.<br>
   
+</details>
+  
 ## 3. The Garment Employee Dataset
 ### 3.1. Download link
-You can get the dataset download link from [here](https://archive.ics.uci.edu/ml/datasets/Productivity+Prediction+of+Garment+Employees).
+<details open>
+<summary>click to show</summary>
+You can get the dataset download link from <a href="http://archive.ics.uci.edu/ml/datasets/Productivity+Prediction+of+Garment+Employees">here</a>.
+</details>
+  
 ### 3.2. Summary of the Dataset
 <details>
 <summary>click to show</summary>
@@ -50,11 +58,17 @@ The 15 attributes in dataset are summarized as below.
 </details>
 
 ## 4. IDE, Framework, and Code
-[Google Colab](https://colab.research.google.com/) is used as the integrated development environment for this project.<br>
-The main frameworks utilised in this project were TensorFlow Keras, Pandas, Numpy, Scikit-Learn, and Numpy.<br>
+<details open>
+<summary>click to show</summary><br>
+<a href="http://colab.research.google.com/">Google Colab</a> is used as the integrated development environment for this project.<br>
+The main frameworks utilised in this project were TensorFlow Keras, Pandas, Numpy, Scikit-Learn, and Numpy.<br><br>
+
 My code: <br>
+
 A.  [Sewing Department Productivity Model](Sewing_Model.ipynb) <br>
+
 B.  [Finishing Department Productivity Model](Finishing_Model.ipynb) <br>
+</details>
 
 ## 5. Methodology
 ### 5.1. Data Pipeline
@@ -117,6 +131,9 @@ Below is the summary of the models:<br>
 
 ## 6. Result
 ### 6.1. Correlation between Features and Labels (Sewing Model)
+<details>
+<summary>click to show</summary>
+  
 #### 6.1.1. In the Raw Data
 Please focus on the "actual productivity" column.<br>
 <p align="center"><img width="800" height="600" src="http://user-images.githubusercontent.com/108325848/188254547-cc96ab25-fe63-4603-83d1-706e8132609c.png"></p>
@@ -131,7 +148,8 @@ After data segmentation, the correlation between "incentive" and "actual product
 Also, the correlation between "actual productivity" with the features such as "wip", "team","no of style change","idle time", and "day_no" is further improved.<br>
 Despite there exists some minor decrease of the correlation between "actual productivity" with the features such as "no of worker", "month", and "day", the overall correlation betwwen the features and the "actual productivity" is greatly enhanced after the data segmentation.<br>
 <p align="center"><img width="800" height="600" src="http://user-images.githubusercontent.com/108325848/188255829-89a37767-20b7-494e-9179-b3860d47ec4f.png"></p>
-
+</details>
+  
 ### 6.2. Sewing Department Productivity Model
 Performance of the model:<br>
 ![image](https://user-images.githubusercontent.com/108325848/188224403-68d22fb4-dff9-4481-a891-554bf96a3213.png)</br>
