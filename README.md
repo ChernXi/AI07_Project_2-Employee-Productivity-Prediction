@@ -154,8 +154,8 @@ Despite there exists some minor decrease of the correlation between "actual prod
   
 ### 6.2. Sewing Department Productivity Model
 <details open>
-<summary>click to show</summary>
-Performance of the model:<br><br>
+<summary>click to show</summary><br>
+Performance of the model:
   
 <p align="left"><img src="Image/sewing_model.stats.png"></p>
 
