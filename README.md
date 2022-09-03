@@ -165,7 +165,7 @@ This shall not be confused with the dotted line, which is the 95% prediction int
 </details>
 
 ### 6.3. Finishing Department Productivity Model
-<details open>
+<details>
 <summary>click to show</summary>
 Performance of the model:<br><br>
   
