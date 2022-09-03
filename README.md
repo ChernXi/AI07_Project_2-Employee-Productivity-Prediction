@@ -169,8 +169,8 @@ Performance of the model:<br>
 
 ## 7. Analysis and Discussion
 <details>
-<summary>click to show</summary>
-"All models are wrong, but some are useful."~[George Box](https://en.wikipedia.org/wiki/All_models_are_wrong)<br>
+<summary>click to show</summary><br>
+"All models are wrong, but some are useful."~<a href="https://en.wikipedia.org/wiki/All_models_are_wrong">George Box</a>
 
 The Sewing-Model is reasonably well fitted, as evidenced by the 95% confidence interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.019 and a mean absolute percentage error of about 3%. <br> 
 
