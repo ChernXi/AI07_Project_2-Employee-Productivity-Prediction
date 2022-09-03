@@ -116,17 +116,33 @@ Below is the summary of the models:<br>
 </details>
 
 ## 6. Result
-### 6.1. Sewing Department Productivity Model
-Performance of the model:<br>
-![image](https://user-images.githubusercontent.com/108325848/188224403-68d22fb4-dff9-4481-a891-554bf96a3213.png)<br>
-![image](https://user-images.githubusercontent.com/108325848/188224518-1814f98d-1f88-43e6-92b9-ce346d040b03.png)<br>
+### 6.1. Correlation between Features and Labels (Sewing Model)
+#### 6.1.1. In the Raw Data
+Please focus on the "actual productivity" column.<br>
+<p align="center"><img width="800" height="600" src="http://user-images.githubusercontent.com/108325848/188254547-cc96ab25-fe63-4603-83d1-706e8132609c.png"></p>
 
-![image](https://user-images.githubusercontent.com/108325848/188222506-62939316-3b29-42ef-b258-eb6c67369f6b.png)<br>
+#### 6.1.2. In the Post-Processing Data
+We see that the correlation between "team" and "actual productivity" has increased significantly.<br>
+Now we have more features which has non-zero correlation with "actual productivity" to build the model, including "date", "quarter", "day"(weekday), "month", and "day_no" (day in a month).<br>   
+<p align="center"><img width="800" height="600" src="http://user-images.githubusercontent.com/108325848/188255573-f30fd5ec-09f7-4505-b6a5-134672163ff2.png"></p>
+
+#### 6.1.3. After Data Segmentation
+After data segmentation, the correlation between "incentive" and "actual productivity" become 10 times larger!
+Also, the correlation between "actual productivity" with the features such as "wip", "team","no of style change","idle time", and "day_no" is further improved.
+Despite there exists some minor decrease of the correlation between "actual productivity" with the features such as "no of worker", "month", and "day", the overall correlation betwwen the features and the "actual productivity" is greatly enhanced after the data segmentation.  
+<p align="center"><img width="800" height="600" src="http://user-images.githubusercontent.com/108325848/188255829-89a37767-20b7-494e-9179-b3860d47ec4f.png"></p>
+
+### 6.2. Sewing Department Productivity Model
+Performance of the model:<br>
+![image](https://user-images.githubusercontent.com/108325848/188224403-68d22fb4-dff9-4481-a891-554bf96a3213.png)</br>
+![image](https://user-images.githubusercontent.com/108325848/188224518-1814f98d-1f88-43e6-92b9-ce346d040b03.png)</br>
+
+<p align="center"><img src="http://user-images.githubusercontent.com/108325848/188222506-62939316-3b29-42ef-b258-eb6c67369f6b.png"></p>
 
 The shaded region is surrounded by a 95% confidence interval, within which we are 95% certain that the **mean value** of prediction lies.<br>
 This shall not be confused with the dotted line, which is the 95% prediction interval, within which 95% of our prediction data is contained.
 
-### 6.2. Finishing Department Productivity Model
+### 6.3. Finishing Department Productivity Model
 Performance of the model:<br>
 ![image](https://user-images.githubusercontent.com/108325848/187825655-aa603b1f-1b59-4981-9cb7-2d397b26d6ab.png)<br>
 ![image](https://user-images.githubusercontent.com/108325848/187825731-c99476ac-a8c5-48b8-a07a-2d1951081c17.png)<br>
@@ -161,9 +177,10 @@ However, a general optimal "wip" value is less likely to exist, because the opti
 ## Conclusion
 <details>
 <summary>click to show</summary>
+  
 We have successfully created a good model(the Sewing-Model) with high validation accuracy(validation mean absolute percentage error = 3%, MAE = 0.019) to predict the sewing team productivity in the future. Can this model be used to predict the productivity of all sewing teams in the European garment industry? We can put this question to the test by using data from other sewing teams. One thing is certain: the more sewing team data we collect, the more accurate the model we build.<br>
 
-The Finishing-Model, on the other hand, may be unsatisfactory with a validation mean absolute percentage error of 15%, but as we can see from the graph, it is not completely useless because we are 95% certain that the real data will fall within a certain interval. For example, if the prediction of productivity is 0.2, we are 95% sure that the actual data falls between 0.1 and 0.7, so it can be a good estimate. More data, in particular the "wip" data, is required to build a better model.
+The Finishing-Model, on the other hand, may be unsatisfactory with a validation mean absolute percentage error of 15%, but as we can see from the graph, it is not completely useless because we are 95% certain that the real data will fall within a certain interval. For example, if the prediction of productivity is 0.2, we are 95% sure that the actual data falls between 0.1 and 0.7, so it can be a good estimate. More data, in particular the "wip" data, is required to build a better model.<br>
 </details>
 
 
