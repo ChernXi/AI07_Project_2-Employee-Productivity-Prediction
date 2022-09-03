@@ -153,22 +153,24 @@ Despite there exists some minor decrease of the correlation between "actual prod
 ### 6.2. Sewing Department Productivity Model
 <details open>
 <summary>click to show</summary>
-Performance of the model:<br>
-<img align="left" src="http://user-images.githubusercontent.com/108325848/188224403-68d22fb4-dff9-4481-a891-554bf96a3213.png">
-<img align="left" src="http://user-images.githubusercontent.com/108325848/188224518-1814f98d-1f88-43e6-92b9-ce346d040b03.png">
+Performance of the model:<br><br>
+  
+<p align="left"><img src="http://user-images.githubusercontent.com/108325848/188224403-68d22fb4-dff9-4481-a891-554bf96a3213.png"></p>
+<p align="left"><img src="http://user-images.githubusercontent.com/108325848/188224518-1814f98d-1f88-43e6-92b9-ce346d040b03.png"><br></p>
 
 <p align="center"><img src="http://user-images.githubusercontent.com/108325848/188222506-62939316-3b29-42ef-b258-eb6c67369f6b.png"></p>
 
 The shaded region is surrounded by a 95% confidence interval, within which we are 95% certain that the **mean value** of prediction lies.<br>
 This shall not be confused with the dotted line, which is the 95% prediction interval, within which 95% of our prediction data is contained.
-<.details>
+</details>
 
 ### 6.3. Finishing Department Productivity Model
 <details open>
 <summary>click to show</summary>
-Performance of the model:<br>
-<img align="left" src="http://user-images.githubusercontent.com/108325848/187825655-aa603b1f-1b59-4981-9cb7-2d397b26d6ab.png">
-<img align="left" src="http://user-images.githubusercontent.com/108325848/187825731-c99476ac-a8c5-48b8-a07a-2d1951081c17.png">
+Performance of the model:<br><br>
+  
+<p align="left"><img src="http://user-images.githubusercontent.com/108325848/187825655-aa603b1f-1b59-4981-9cb7-2d397b26d6ab.png"></p>
+<p align="left"><img src="http://user-images.githubusercontent.com/108325848/187825731-c99476ac-a8c5-48b8-a07a-2d1951081c17.png"></p>
 
 <p align="center"><img src="http://user-images.githubusercontent.com/108325848/187712523-078f35c1-7cea-4707-bcdb-a69b0e7a0bd2.png"></p>
 </details>
