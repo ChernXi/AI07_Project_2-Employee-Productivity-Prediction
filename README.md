@@ -151,6 +151,8 @@ Despite there exists some minor decrease of the correlation between "actual prod
 </details>
   
 ### 6.2. Sewing Department Productivity Model
+<details open>
+<summary>click to show</summary>
 Performance of the model:<br>
 ![image](https://user-images.githubusercontent.com/108325848/188224403-68d22fb4-dff9-4481-a891-554bf96a3213.png)</br>
 ![image](https://user-images.githubusercontent.com/108325848/188224518-1814f98d-1f88-43e6-92b9-ce346d040b03.png)</br>
@@ -159,13 +161,17 @@ Performance of the model:<br>
 
 The shaded region is surrounded by a 95% confidence interval, within which we are 95% certain that the **mean value** of prediction lies.<br>
 This shall not be confused with the dotted line, which is the 95% prediction interval, within which 95% of our prediction data is contained.
+<.details>
 
 ### 6.3. Finishing Department Productivity Model
+<details>
+<summary>click to show</summary>
 Performance of the model:<br>
 ![image](https://user-images.githubusercontent.com/108325848/187825655-aa603b1f-1b59-4981-9cb7-2d397b26d6ab.png)<br>
 ![image](https://user-images.githubusercontent.com/108325848/187825731-c99476ac-a8c5-48b8-a07a-2d1951081c17.png)<br>
 
 ![image](https://user-images.githubusercontent.com/108325848/187712523-078f35c1-7cea-4707-bcdb-a69b0e7a0bd2.png)<br>
+</details>
 
 ## 7. Analysis and Discussion
 <details>
