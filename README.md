@@ -96,7 +96,7 @@ The differences between the models all stem from their data pipeline, as summari
 ### 5.2. Models' pipeline 
 Both models mentioned above are dense neural network models that are constructed by using the functional API approach.<br>
 Below is the summary of the models:<br>
-![image](https://user-images.githubusercontent.com/108325848/187822412-7e87e61d-62b6-4aeb-9831-c8d02df22f05.png)
+![image](https://user-images.githubusercontent.com/108325848/188249468-8fd38613-5445-4dc7-9e33-89c27c385ae5.png)<br>
 
 ## 6. Result
 ### 6.1. Sewing Department Productivity Model
