@@ -128,7 +128,7 @@ The differences between the models all stem from their data pipeline, as summari
 <summary>click to show</summary>
 Both models mentioned above are dense neural network models that are constructed by using the functional API approach.<br>
 Below is the summary of the models:<br>
-<img src="http://user-images.githubusercontent.com/108325848/188249468-8fd38613-5445-4dc7-9e33-89c27c385ae5.png">
+<p align="center"><img src="Image/model summary.png"></p>
 </details>
 
 ## 6. Result
@@ -143,13 +143,13 @@ Please focus on the "actual productivity" column.<br>
 #### 6.1.2. In the Post-Processing Data
 We see that the correlation between "team" and "actual productivity" has increased significantly.<br>
 Now we have more features which has non-zero correlation with "actual productivity" to build the model, including "date", "quarter", "day"(weekday), "month", and "day_no" (day in a month).<br>   
-<p align="center"><img width="800" height="600" src="http://user-images.githubusercontent.com/108325848/188255573-f30fd5ec-09f7-4505-b6a5-134672163ff2.png"></p>
+<p align="center"><img width="800" height="600" src="Image/heatmap.post_training.png"></p>
 
 #### 6.1.3. After Data Segmentation
 After data segmentation, the correlation between "incentive" and "actual productivity" become 10 times larger!<br>
 Also, the correlation between "actual productivity" with the features such as "wip", "team","no of style change","idle time", and "day_no" is further improved.<br>
 Despite there exists some minor decrease of the correlation between "actual productivity" with the features such as "no of worker", "month", and "day", the overall correlation betwwen the features and the "actual productivity" is greatly enhanced after the data segmentation.<br>
-<p align="center"><img width="800" height="600" src="http://user-images.githubusercontent.com/108325848/188255829-89a37767-20b7-494e-9179-b3860d47ec4f.png"></p>
+<p align="center"><img width="800" height="600" src="Image/heatmap.post_segmentation.png"></p>
 </details>
   
 ### 6.2. Sewing Department Productivity Model
@@ -157,10 +157,9 @@ Despite there exists some minor decrease of the correlation between "actual prod
 <summary>click to show</summary>
 Performance of the model:<br><br>
   
-<p align="left"><img src="http://user-images.githubusercontent.com/108325848/188224403-68d22fb4-dff9-4481-a891-554bf96a3213.png"></p>
-<p align="left"><img src="http://user-images.githubusercontent.com/108325848/188224518-1814f98d-1f88-43e6-92b9-ce346d040b03.png"><br></p>
+<p align="left"><img src="Image/sewing_model.stats.png"></p>
 
-<p align="center"><img src="http://user-images.githubusercontent.com/108325848/188222506-62939316-3b29-42ef-b258-eb6c67369f6b.png"></p>
+<p align="center"><img src="Image/sewing_model.plot.png"></p>
 
 The shaded region is surrounded by a 95% confidence interval, within which we are 95% certain that the **mean value** of prediction lies.<br>
 This shall not be confused with the dotted line, which is the 95% prediction interval, within which 95% of our prediction data is contained.
