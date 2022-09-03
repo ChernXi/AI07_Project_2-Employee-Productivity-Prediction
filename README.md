@@ -5,9 +5,9 @@
 
   The garment industry is vital to human civilization and has a massive global demand.<br>
 
-To estimate their garment production capacity and ensure that production is completed on time, large garment production companies must track, analyse, and predict the productivity of their working teams. This is critical in order to maintain the company's reputation and avoid paying breach of contract penalties.<br>
+To estimate their garment production capacity and ensure that production is completed on time, large garment production companies must track, analyse, and predict the productivity of their working teams. This is crucial in order to maintain the company's reputation and avoid paying breach of contract penalties.<br>
 
-Furthermore, a good prediction model was critical in the future development of the garment company because it provided information to streamline production lines and optimise production efficiency.<br>
+Furthermore, a good prediction model is essential in the future development of the garment company because it provides the information to streamline production lines and optimize production efficiency.<br>
 
 </details>
 
@@ -34,8 +34,10 @@ You can get the dataset download link from <a href="http://archive.ics.uci.edu/m
   
 ### 3.2. Summary of the Dataset
 <details>
-<summary>click to show</summary>
+<summary>click to show</summary><br>
+  
 The data is collected from European country at the year of 2015.<br>
+  
 There are 15 attributes in this dataset. We will make use of the first 14 attributes as the features, and use them to launch a multilinear regression traning by using a dense neural network. Our goal is to train out a model that can predict the actual productivity, which is the last attribute of the dataset, with our targeted mean absolute error percentage less than 10%.
 
 The 15 attributes in dataset are summarized as below.
@@ -73,7 +75,7 @@ B.  [Finishing Department Productivity Model](Finishing_Model.ipynb) <br>
 ## 5. Methodology
 ### 5.1. Data Pipeline
 <details>
-<summary>click to show</summary>
+<summary>click to show</summary><br>
 Two models, namely the "Sewing Department Productivity Model" (a.k.a. Sewing-Model) and the "Finishing Department Productivity Model" (a.k.a. Finishing-Model), were constructed separately by using the same model pipeline. <br>
 The differences between the models all stem from their data pipeline, as summarized as follows:<br>
 
@@ -202,7 +204,7 @@ However, a general optimal "wip" value is less likely to exist, because the opti
 
 ## Conclusion
 <details>
-<summary>click to show</summary>
+<summary>click to show</summary><br>
   
 We have successfully created a good model(the Sewing-Model) with high validation accuracy(validation mean absolute percentage error = 3%, MAE = 0.019) to predict the sewing team productivity in the future. Can this model be used to predict the productivity of all sewing teams in the European garment industry? We can put this question to the test by using data from other sewing teams. One thing is certain: the more sewing team data we collect, the more accurate the model we build.<br>
 
