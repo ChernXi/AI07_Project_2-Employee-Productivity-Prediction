@@ -1,13 +1,18 @@
 # Productivity Prediction of Garment Employees Data Set 
+<details>
+<summary><h2>1. Motivation</h2></summary>
 
-## 1. Motivation
-The garment industry is vital to human civilization and has a massive global demand.<br>
+  The garment industry is vital to human civilization and has a massive global demand.<br>
 
 To estimate their garment production capacity and ensure that production is completed on time, large garment production companies must track, analyse, and predict the productivity of their working teams. This is critical in order to maintain the company's reputation and avoid paying breach of contract penalties.<br>
 
 Furthermore, a good prediction model was critical in the future development of the garment company because it provided information to streamline production lines and optimise production efficiency.<br>
 
-## 2. Objective
+</details>
+
+<details>
+<summary><h2>2. Objective</h2></summary>
+  
 (i) Construct a good prediction model that can be used to predict the employee productivity in European garment Industry.<br>
 
 (ii) Data mining to determine which attributes in the European garment industry are highly correlated with employee productivity and what their optimal value is.<br>
@@ -15,14 +20,16 @@ Furthermore, a good prediction model was critical in the future development of t
 (iii) As a demonstration to show how to construct a dense neural network.<br>
 
 (iv) As a demonstration to show how to do data cleaning, data preparation, data analysis and data exploration.<br>
-
-## 3. The Garment Employee Dataset
-### 3.1. Download link
+ </details>
+  
+<details><summary><h2> 3. The Garment Employee Dataset</h2></summary>
+  <details><summary><h3>3.1. Download link</h3></summary>
 You can get the dataset download link from [here](https://archive.ics.uci.edu/ml/datasets/Productivity+Prediction+of+Garment+Employees).
-
-### 3.2. Summary of the Dataset
-The data is collected from European country at the year of 2015.
+  </details>
+  <details><summary><h3> 3.2. Summary of the Dataset</h3></summary>The data is collected from European country at the year of 2015.<br>
 There are 15 attributes in this dataset. We will make use of the first 14 attributes as the features, and use them to launch a multilinear regression traning by using a dense neural network. Our goal is to train out a model that can predict the actual productivity, which is the last attribute of the dataset, with our targeted mean absolute error percentage less than 10%.
+  </details>
+</details>
 
 The 15 attributes in dataset are summarized as below.
 
