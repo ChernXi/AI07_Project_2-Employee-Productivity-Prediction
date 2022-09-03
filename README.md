@@ -154,8 +154,8 @@ Despite there exists some minor decrease of the correlation between "actual prod
 <details open>
 <summary>click to show</summary>
 Performance of the model:<br>
-![image](https://user-images.githubusercontent.com/108325848/188224403-68d22fb4-dff9-4481-a891-554bf96a3213.png)</br>
-![image](https://user-images.githubusercontent.com/108325848/188224518-1814f98d-1f88-43e6-92b9-ce346d040b03.png)</br>
+<img align="left" src="http://user-images.githubusercontent.com/108325848/188224403-68d22fb4-dff9-4481-a891-554bf96a3213.png">
+<img align="left" src="http://user-images.githubusercontent.com/108325848/188224518-1814f98d-1f88-43e6-92b9-ce346d040b03.png">
 
 <p align="center"><img src="http://user-images.githubusercontent.com/108325848/188222506-62939316-3b29-42ef-b258-eb6c67369f6b.png"></p>
 
@@ -164,13 +164,13 @@ This shall not be confused with the dotted line, which is the 95% prediction int
 <.details>
 
 ### 6.3. Finishing Department Productivity Model
-<details>
+<details open>
 <summary>click to show</summary>
 Performance of the model:<br>
-![image](https://user-images.githubusercontent.com/108325848/187825655-aa603b1f-1b59-4981-9cb7-2d397b26d6ab.png)<br>
-![image](https://user-images.githubusercontent.com/108325848/187825731-c99476ac-a8c5-48b8-a07a-2d1951081c17.png)<br>
+<img align="left" src="http://user-images.githubusercontent.com/108325848/187825655-aa603b1f-1b59-4981-9cb7-2d397b26d6ab.png">
+<img align="left" src="http://user-images.githubusercontent.com/108325848/187825731-c99476ac-a8c5-48b8-a07a-2d1951081c17.png">
 
-![image](https://user-images.githubusercontent.com/108325848/187712523-078f35c1-7cea-4707-bcdb-a69b0e7a0bd2.png)<br>
+<p align="center"><img src="http://user-images.githubusercontent.com/108325848/187712523-078f35c1-7cea-4707-bcdb-a69b0e7a0bd2.png"></p>
 </details>
 
 ## 7. Analysis and Discussion
