@@ -1,6 +1,7 @@
 # Productivity Prediction of Garment Employees Data Set 
+## 1. Motivation
 <details>
-<summary><h2>1. Motivation</h2></summary>
+<summary>click to show</summary>
 
   The garment industry is vital to human civilization and has a massive global demand.<br>
 
@@ -10,26 +11,24 @@ Furthermore, a good prediction model was critical in the future development of t
 
 </details>
 
-<details>
-<summary><h2>2. Objective</h2></summary>
+## 2. Objective
   
 (i) Construct a good prediction model that can be used to predict the employee productivity in European garment Industry.<br>
 
-(ii) Data mining to determine which attributes in the European garment industry are highly correlated with employee productivity and what their optimal value is.<br>
+(ii) Data mining to determine which attributes in the European garment industry are highly correlated with employee productivity.<br>
 
 (iii) As a demonstration to show how to construct a dense neural network.<br>
 
 (iv) As a demonstration to show how to do data cleaning, data preparation, data analysis and data exploration.<br>
- </details>
   
-<details><summary><h2> 3. The Garment Employee Dataset</h2></summary>
-  <details><summary><h3>3.1. Download link</h3></summary>
+## 3. The Garment Employee Dataset
+### 3.1. Download link
 You can get the dataset download link from [here](https://archive.ics.uci.edu/ml/datasets/Productivity+Prediction+of+Garment+Employees).
-  </details>
-  <details><summary><h3> 3.2. Summary of the Dataset</h3></summary>The data is collected from European country at the year of 2015.<br>
+### 3.2. Summary of the Dataset
+<details>
+<summary>click to show</summary>
+The data is collected from European country at the year of 2015.<br>
 There are 15 attributes in this dataset. We will make use of the first 14 attributes as the features, and use them to launch a multilinear regression traning by using a dense neural network. Our goal is to train out a model that can predict the actual productivity, which is the last attribute of the dataset, with our targeted mean absolute error percentage less than 10%.
-  </details>
-</details>
 
 The 15 attributes in dataset are summarized as below.
 
@@ -48,13 +47,19 @@ The 15 attributes in dataset are summarized as below.
 13 idle_time : The amount of time when the production was interrupted due to several reasons <br>
 14 idle_men : The number of workers who were idle due to production interruption <br>
 15 actual_productivity : The actual % of productivity that was delivered by the workers. It ranges from 0-1. <br>
+</details>
 
-## 4. IDE and Framework
+## 4. IDE, Framework, and Code
 [Google Colab](https://colab.research.google.com/) is used as the integrated development environment for this project.<br>
 The main frameworks utilised in this project were TensorFlow Keras, Pandas, Numpy, Scikit-Learn, and Numpy.<br>
+My code: <br>
+A.  [Sewing Department Productivity Model](Sewing_Model.ipynb) <br>
+B.  [Finishing Department Productivity Model](Finishing_Model.ipynb) <br>
 
 ## 5. Methodology
 ### 5.1. Data Pipeline
+<details>
+<summary>click to show</summary>
 Two models, namely the "Sewing Department Productivity Model" (a.k.a. Sewing-Model) and the "Finishing Department Productivity Model" (a.k.a. Finishing-Model), were constructed separately by using the same model pipeline. <br>
 The differences between the models all stem from their data pipeline, as summarized as follows:<br>
 
@@ -99,11 +104,16 @@ The differences between the models all stem from their data pipeline, as summari
     <td align="center">Test_size = 0.1 </td>
   </tr>
 </table><br>
+</details>
 
 ### 5.2. Models' pipeline 
+
+<details>
+<summary>click to show</summary>
 Both models mentioned above are dense neural network models that are constructed by using the functional API approach.<br>
 Below is the summary of the models:<br>
-![image](https://user-images.githubusercontent.com/108325848/188249468-8fd38613-5445-4dc7-9e33-89c27c385ae5.png)<br>
+<img src="http://user-images.githubusercontent.com/108325848/188249468-8fd38613-5445-4dc7-9e33-89c27c385ae5.png">
+</details>
 
 ## 6. Result
 ### 6.1. Sewing Department Productivity Model
@@ -124,6 +134,8 @@ Performance of the model:<br>
 ![image](https://user-images.githubusercontent.com/108325848/187712523-078f35c1-7cea-4707-bcdb-a69b0e7a0bd2.png)<br>
 
 ## 7. Analysis and Discussion
+<details>
+<summary>click to show</summary>
 "All models are wrong, but some are useful."~[George Box](https://en.wikipedia.org/wiki/All_models_are_wrong)<br>
 
 The Sewing-Model is reasonably well fitted, as evidenced by the 95% confidence interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.019 and a mean absolute percentage error of about 3%. <br> 
@@ -139,19 +151,20 @@ We can also check the other attributes/variables in a similar way. By drawing ou
 
 Some may argue that the difference between the results of the Sewing-Model and the Finishing-Model may also be caused by the difference in team attributes(the mean productivity), but I actually did check this argument by using the same mean in both models. The Sewing-Model's prediction accuracy only differs a little, and the model I presented in the data pipeline is in fact marginally more accurate. This forces us to conclude that the missing wip data is the main cause of the inaccuracy of the Finishing-Model, if compared to the Sewing-Model.<br>
 
-Last but not least, if there is an optimal value of wip data, We can check this by generating some lists of sewing data with all attributes fixed but the wip value different. Then we make use of our fairly well fitted sewing data to predict the productivities of each entry in the list. Then we can gather the optimal value from all the lists to find its mean. This mean will be the overall optimal(ideal) value of the wip data.<br>
+On the other hand, if there is an optimal value for the wip data, We can check this by generating some lists of sewing data with all attributes fixed but the wip value different. Then we make use of our fairly well fitted sewing data to predict the productivities of each entry in the list. Then we can gather the optimal value from all the lists to find its mean. This mean will be the overall optimal(ideal) value of the wip data.<br>
 
 Why is it advantageous to obtain the optimal value of "wip" (work-in-progress) then? The work-in-progress could be distributed to other teams by the manager, ensuring that most teams have the right amount of work to do and can therefore maximize their production.<br>
 
-The success will roll up and morally encourage the employees to perform better, hence causing the company to win the race against their peers. All of this could stem from one key point: using data mining in their business to determine the optimal value of variables(e.g., work in progress, incentive, overtime) for their employees in order to maximise productivity.<br>
-
-However, a general optimal "wip" value is less likely to exist, because the optimal value is the collective result of all other data. We can, in turn build a model that use the "wip" as the label, and "actual productivity"(wishful productivity) as one of the feature, than we are able to obtain the optimal "wip" value for a specific group of employee.  
+However, a general optimal "wip" value is less likely to exist, because the optimal value is the collective result of all other data. We can, in turn, build a model that uses the "wip" as the label and "actual productivity"(wishful productivity) as one of the features. Then we are able to obtain the optimal "wip" value for a specific employee group.<br>  
+</details>
 
 ## Conclusion
+<details>
+<summary>click to show</summary>
 We have successfully created a good model(the Sewing-Model) with high validation accuracy(validation mean absolute percentage error = 3%, MAE = 0.019) to predict the sewing team productivity in the future. Can this model be used to predict the productivity of all sewing teams in the European garment industry? We can put this question to the test by using data from other sewing teams. One thing is certain: the more sewing team data we collect, the more accurate the model we build.<br>
 
 The Finishing-Model, on the other hand, may be unsatisfactory with a validation mean absolute percentage error of 15%, but as we can see from the graph, it is not completely useless because we are 95% certain that the real data will fall within a certain interval. For example, if the prediction of productivity is 0.2, we are 95% sure that the actual data falls between 0.1 and 0.7, so it can be a good estimate. More data, in particular the "wip" data, is required to build a better model.
-
+</details>
 
 
 
