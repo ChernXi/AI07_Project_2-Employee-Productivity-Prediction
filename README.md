@@ -3,7 +3,7 @@
 <details>
 <summary>click to show</summary>
 
-  The garment industry is vital to human civilization and has a massive global demand.<br>
+The garment industry is vital to human civilization and has a massive global demand.<br>
 
 To estimate their garment production capacity and ensure that production is completed on time, large garment production companies must track, analyse, and predict the productivity of their working teams. This is crucial in order to maintain the company's reputation and avoid paying breach of contract penalties.<br>
 
@@ -138,7 +138,7 @@ Below is the summary of the models:<br>
   
 #### 6.1.1. In the Raw Data
 Please focus on the "actual productivity" column.<br>
-<p align="center"><img width="800" height="600" src="http://user-images.githubusercontent.com/108325848/188254547-cc96ab25-fe63-4603-83d1-706e8132609c.png"></p>
+<p align="center"><img width="800" height="600" src="Image/heatmap.raw.png"</p>
 
 #### 6.1.2. In the Post-Processing Data
 We see that the correlation between "team" and "actual productivity" has increased significantly.<br>
