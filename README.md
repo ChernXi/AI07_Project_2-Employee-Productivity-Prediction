@@ -62,7 +62,7 @@ The 15 attributes in dataset are summarized as below.
 ## 4. IDE, Framework, and Code
 <details open>
 <summary>click to show</summary><br>
-<a href="http://colab.research.google.com/">Google Colab</a> is used as the integrated development environment for this project.<br>
+<a href="http://colab.research.google.com/">Google Colab</a> is used as the IDE(integrated development environment) for this project.<br>
 The main frameworks utilised in this project were TensorFlow Keras, Pandas, Numpy, Scikit-Learn, Seaborn, and Matplotlib.<br><br>
 
 My code: <br>
