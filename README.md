@@ -94,7 +94,7 @@ The differences between the models all stem from their data pipeline, as summari
     <th>typo error fixed</th><td align="center">Yes</td><td align="center">Same</td>
   </tr>
   <tr>
-    <th>wip(work in progress)</th><td align="center">Use log function to reduce the skewness of the data</td><td align="center">Classified into 4 groups</td>
+    <th>wip(work in progress)</th><td align="center">Use log function to reduce the skewness of the data</td><td align="center">Classified into 4 groups so that the actual value of finishing department is within the margin of error(it can be non-zero but still in the least-value group.)</td>
   </tr>
   <tr>
     <th>date</th><td align="center">Indexed by using chronological order</td><td align="center">Same</td>
@@ -135,7 +135,7 @@ Below is the summary of the models:<br>
 ## 6. Result
 ### 6.1. Correlation between Features and Labels (Sewing Model)
 <details>
-<summary>click to show</summary>
+<summary>click to show</summary><br>
   
 #### 6.1.1. In the Raw Data
 Please focus on the "actual productivity" column.<br>
@@ -143,7 +143,7 @@ Please focus on the "actual productivity" column.<br>
 
 #### 6.1.2. In the Post-Processing Data
 We see that the correlation between "team" and "actual productivity" has increased significantly.<br>
-Now we have more features which has non-zero correlation with "actual productivity" to build the model, including "date", "quarter", "day"(weekday), "month", and "day_no" (day in a month).<br>   
+Now we have more features which has non-zero correlation with "actual productivity" to train the model, including "date", "quarter", "day"(weekday), "month", and "day_no" (day in a month).<br>   
 <p align="center"><img width="800" height="600" src="Image/heatmap.post_training.png"></p>
 
 #### 6.1.3. After Data Segmentation
@@ -152,8 +152,24 @@ Also, the correlation between "actual productivity" with the features such as "w
 Despite there exists some minor decrease of the correlation between "actual productivity" with the features such as "no of worker", "month", and "day", the overall correlation betwwen the features and the "actual productivity" is greatly enhanced after the data segmentation.<br>
 <p align="center"><img width="800" height="600" src="Image/heatmap.post_segmentation.png"></p>
 </details>
+
+### 6.2. Correlation between Features and Labels (Finishing Model)
+<details>
+<summary>click to show</summary><br>
+
+### 6.2.1 In the Finishing Department Data after Data Pre-Processing and Data Segmentation 
+The correlations in the raw data are in 6.1.1.<br>
+Here we can see that after we process the data, we have more features to train the model, and the correlation between "team" and "actual productivity" has increased significantly.<br>
+However, since all "wip" data from the finishing department are single-valued, the correlation between it with the multi-valued actual productivity is zero.<br>
+<p align="center"><img width="800" height="600" src="Image/finishing_heatmap_dense.png"></p>
   
-### 6.2. Sewing Department Productivity Model
+### 6.2.2 In All Training Data in the Finishing Model
+We can see that all features has non-zero correlation with the label, this means they are contributive to enhance the accuracy of the model.<br>
+<p align="center"><img width="800" height="600" src="Image/finishing_training_data_heatmap.png"></p>
+
+</details>
+  
+### 6.3. Sewing Department Productivity Model
 <details open>
 <summary>click to show</summary><br>
 Performance of the model:
@@ -166,7 +182,7 @@ The shaded region is surrounded by a 95% confidence interval, within which we ar
 This shall not be confused with the dotted line, which is the 95% prediction interval, within which 95% of our prediction data is contained.
 </details>
 
-### 6.3. Finishing Department Productivity Model
+### 6.4. Finishing Department Productivity Model
 <details>
 <summary>click to show</summary><br>
 Performance of the model:<br><br>
