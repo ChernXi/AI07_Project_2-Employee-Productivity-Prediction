@@ -97,6 +97,9 @@ The differences between the models all stem from their data pipeline, as summari
     <th>typo of data value</th><td align="center">Replace "targeted_productivity" of index 663 from 0.07 to 0.7</td><td align="center">Same</td>
   </tr>
   <tr>
+    <th>overtime</th><td align="center">divided the overtime by no of workers, as original data(total overtime of the whole team) is highly misleading </td><td align="center">Same</td>
+  </tr>
+  <tr>
     <th>wip(work in progress)</th><td align="center">Use the log function to reduce the skewness of the data</td><td align="center">The "wip" data is divided into four groups in order to keep the actual value of the finishing department within the margin of error. (It can be non-zero while still belonging to the lowest value group.)</td>
   </tr>
   <tr>
