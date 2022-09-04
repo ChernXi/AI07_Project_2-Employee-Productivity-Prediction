@@ -88,13 +88,13 @@ The differences between the models all stem from their data pipeline, as summari
   </tr>
   <tr>
     <th>input data</th><td align="center">Sewing department data</td>
-    <td align="center">2 $\times$ department training data + sewing department data</td>
+    <td align="center"> finishing department training data + all sewing department data</td>
   </tr>
   <tr>
     <th>typo error fixed</th><td align="center">Yes</td><td align="center">Same</td>
   </tr>
   <tr>
-    <th>wip(work in progress)</th><td align="center">Using original data</td><td align="center">Classified into 3 groups</td>
+    <th>wip(work in progress)</th><td align="center">Use log function to reduce the skewness of the data</td><td align="center">Classified into 4 groups</td>
   </tr>
   <tr>
     <th>date</th><td align="center">Indexed by using chronological order</td><td align="center">Same</td>
