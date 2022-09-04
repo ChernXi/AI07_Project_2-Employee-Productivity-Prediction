@@ -76,7 +76,7 @@ B.  [Finishing Department Productivity Model](Finishing_Model.ipynb) <br>
 ### 5.1. Data Pipeline
 <details>
 <summary>click to show</summary><br>
-Two models, namely the "Sewing Department Productivity Model" (a.k.a. Sewing-Model) and the "Finishing Department Productivity Model" (a.k.a. Finishing-Model), were constructed separately by using the same model pipeline. <br>
+Two models, namely the "Sewing Department Productivity Model" (a.k.a. Sewing-Model) and the "Finishing Department Productivity Model" (a.k.a. Finishing-Model), were constructed separately by using the same model pipeline. <br><br>
 The differences between the models all stem from their data pipeline, as summarized as follows:<br>
 
 <table class="center" div align="center">
@@ -125,7 +125,8 @@ The differences between the models all stem from their data pipeline, as summari
 ### 5.2. Models' pipeline 
 
 <details>
-<summary>click to show</summary>
+<summary>click to show</summary><br>
+
 Both models mentioned above are dense neural network models that are constructed by using the functional API approach.<br>
 Below is the summary of the models:<br>
 <p align="center"><img src="Image/model summary.png"></p>
@@ -167,9 +168,8 @@ This shall not be confused with the dotted line, which is the 95% prediction int
 
 ### 6.3. Finishing Department Productivity Model
 <details>
-<summary>click to show</summary>
+<summary>click to show</summary><br>
 Performance of the model:<br><br>
-  
 <p align="left"><img src="http://user-images.githubusercontent.com/108325848/187825655-aa603b1f-1b59-4981-9cb7-2d397b26d6ab.png"></p>
 <p align="left"><img src="http://user-images.githubusercontent.com/108325848/187825731-c99476ac-a8c5-48b8-a07a-2d1951081c17.png"></p>
 
@@ -179,7 +179,7 @@ Performance of the model:<br><br>
 ## 7. Analysis and Discussion
 <details>
 <summary>click to show</summary><br>
-"All models are wrong, but some are useful."~<a href="https://en.wikipedia.org/wiki/All_models_are_wrong">George Box</a><br>
+"All models are wrong, but some are useful."~<a href="https://en.wikipedia.org/wiki/All_models_are_wrong">George Box</a> <br><br>
 
 The Sewing-Model is reasonably well fitted, as evidenced by the 95% confidence interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.019 and a mean absolute percentage error of about 3%. <br> 
 
