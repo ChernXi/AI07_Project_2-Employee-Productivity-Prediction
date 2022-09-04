@@ -94,7 +94,7 @@ The differences between the models all stem from their data pipeline, as summari
     <th>typo error fixed</th><td align="center">Yes</td><td align="center">Same</td>
   </tr>
   <tr>
-    <th>wip(work in progress)</th><td align="center">Use log function to reduce the skewness of the data</td><td align="center">The "wip" data is divided into four groups in order to keep the actual value of the finishing department within the margin of error. (It can be non-zero while still belonging to the lowest value group.)</td>
+    <th>wip(work in progress)</th><td align="center">Use the log function to reduce the skewness of the data</td><td align="center">The "wip" data is divided into four groups in order to keep the actual value of the finishing department within the margin of error. (It can be non-zero while still belonging to the lowest value group.)</td>
   </tr>
   <tr>
     <th>date</th><td align="center">Indexed by using chronological order</td><td align="center">Same</td>
