@@ -91,7 +91,10 @@ The differences between the models all stem from their data pipeline, as summari
     <td align="center"> finishing department training data + all sewing department data</td>
   </tr>
   <tr>
-    <th>typo error fixed</th><td align="center">Yes</td><td align="center">Same</td>
+    <th>typo of column name</th><td align="center">Replace ["Sweing", "Finishing "] by ["Sewing","Finishing"] </td><td align="center">Same</td>
+  </tr>
+  <tr>
+    <th>typo of data value</th><td align="center">Replace "targeted_productivity" of index 663 from 0.07 to 0.7</td><td align="center">Same</td>
   </tr>
   <tr>
     <th>wip(work in progress)</th><td align="center">Use the log function to reduce the skewness of the data</td><td align="center">The "wip" data is divided into four groups in order to keep the actual value of the finishing department within the margin of error. (It can be non-zero while still belonging to the lowest value group.)</td>
