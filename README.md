@@ -186,10 +186,9 @@ This shall not be confused with the dotted line, which is the 95% prediction int
 <details>
 <summary>click to show</summary><br>
 Performance of the model:<br><br>
-<p align="left"><img src="http://user-images.githubusercontent.com/108325848/187825655-aa603b1f-1b59-4981-9cb7-2d397b26d6ab.png"></p>
-<p align="left"><img src="http://user-images.githubusercontent.com/108325848/187825731-c99476ac-a8c5-48b8-a07a-2d1951081c17.png"></p>
+<p align="left"><img src="Image/finishing_model_stats.png"></p>
 
-<p align="center"><img src="http://user-images.githubusercontent.com/108325848/187712523-078f35c1-7cea-4707-bcdb-a69b0e7a0bd2.png"></p>
+<p align="center"><img src="Image/finishing_model_plot.png"></p>
 </details>
 
 ## 7. Analysis and Discussion
