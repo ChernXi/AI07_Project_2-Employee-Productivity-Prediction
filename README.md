@@ -183,9 +183,9 @@ Performance of the model:<br><br>
 
 The Sewing-Model is reasonably well fitted, as evidenced by the 95% confidence interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.019 and a mean absolute percentage error of about 3%. <br> 
 
-The Finishing-Model does not fit well because the 95% confidence interval does not pass through the origin and the majority of the prediction data appears less convergent. Besides, it has a validation mean absolute percentage error of 0.103 and a mean absolute percentage error of about 15%.<br>
+The Finishing-Model does not fit well because the 95% confidence interval does not pass through the origin and the majority of the prediction data appears less convergent. Besides, it has a validation mean absolute percentage error of 0.098 and a mean absolute percentage error of about 14%.<br>
 
-Whatsoever, the linear fit in the Finishing-Model indicates that the prediction data increases linearly with the real data. Furthermore, the 0.61 correlation between the prediction data and the real data suggests that the model isn't all that bad. Therefore, it stands to reason that the Finishing-Model can be improved if more data is provided. <br>  
+Whatsoever, the linear fit in the Finishing-Model indicates that the prediction data increases linearly with the real data. Furthermore, the 0.62 correlation between the prediction data and the real data suggests that the model isn't all that bad. Therefore, it stands to reason that the Finishing-Model can be improved if more data is provided. <br>  
 
 By exploring the data, we know that the main difference between the Finishing-Model and the Sewing-Model is that all "wip" data is missing in the Finishing-Model.
 The result of poor fitting in the finising model indicates that "wip" is indeed a crucial variable that is highly correlated to employee productivity in the European garment industry.<br>
@@ -207,7 +207,7 @@ However, a general optimal "wip" value is less likely to exist, because the opti
   
 We have successfully created a good model(the Sewing-Model) with high validation accuracy(validation mean absolute percentage error = 3%, MAE = 0.019) to predict the sewing team productivity in the future. Can this model be used to predict the productivity of all sewing teams in the European garment industry? We can put this question to the test by using data from other sewing teams. One thing is certain: the more sewing team data we collect, the more accurate the model we build.<br>
 
-The Finishing-Model, on the other hand, may be unsatisfactory with a validation mean absolute percentage error of 15%, but as we can see from the graph, it is not completely useless because we are 95% certain that the real data will fall within a certain interval. For example, if the prediction of productivity is 0.2, we are 95% sure that the actual data falls between 0.1 and 0.7, so it can be a good estimate. More data, in particular the "wip" data, is required to build a better model.<br>
+The Finishing-Model, on the other hand, may be unsatisfactory with a validation mean absolute percentage error of 14%, but as we can see from the graph, it is not completely useless because we are 95% certain that the real data will fall within a certain interval. For example, if the prediction of productivity is 1.0, we are 95% sure that the actual data falls between 0.65 and 1.21, so it can be a good estimate. More data, in particular the "wip" data, is required to build a better model.<br>
 </details>
 
 
