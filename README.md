@@ -109,18 +109,18 @@ The differences between the models all stem from their data pipeline, as summari
     <th>quarter(index of week in a month)</th><td align="center">Changed to integers</td><td align="center">Same</td>
   </tr>
   <tr>
-    <th>month(/th)<td align="center">Extracted from date</td><td align="center">Same</td>
+    <th>month(/th)<td align="center">Extracted from the date</td><td align="center">Same</td>
   </tr>
   <tr>
-    <th>day(in months)</th><td align="center">Extracted from date</td><td align="center">Same</td>
+    <th>day(in months)</th><td align="center">Extracted from the date</td><td align="center">Same</td>
   </tr>
   <tr>
     <th>team</th><td align="center">Replaced by the average productivity of the corresponding sewing team</td>
     <td align="center">Replaced by the average productivity of the corresponding departmental team</td>
   </tr>
   <tr>
-    <th>train_test_split</th><td align="center">Test_size = 0.1 (a small test size is used due to the lacking of data)</td>
-    <td align="center">Test_size = 0.1 </td>
+    <th>train_test_split</th><td align="center">Test_size = 0.2</td>
+    <td align="center">Test_size = 0.1 (a small test size is used due to the lacking of data)</td>
   </tr>
 </table><br>
 </details>
