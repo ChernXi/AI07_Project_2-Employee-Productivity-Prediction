@@ -219,7 +219,7 @@ On the other hand, if there is an optimal value for the wip data, We can check t
 
 Why is it advantageous to obtain the optimal value of "wip" (work-in-progress) then? The work-in-progress could be distributed to other teams by the manager, ensuring that most teams have the right amount of work to do and can therefore maximize their production.<br>
 
-However, a general optimal "wip" value is less likely to exist, because the optimal value is the collective result of all other data. We can, in turn, build a model that uses the "wip" as the label and "actual productivity"(wishful productivity) as one of the features. Then we are able to obtain the optimal "wip" value for a specific employee group.<br>  
+However, a general optimal "wip" value is less likely to exist, because its optimal value is the collective result of all other data. We can, in turn, build a model that uses the "wip" as the label and "actual productivity"(wishful productivity) as one of the features. Then we are able to obtain the optimal "wip" value for a specific employee group.<br>  
 </details>
 
 ## 7. Conclusion
