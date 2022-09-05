@@ -208,10 +208,9 @@ The Finishing-Model is significantly inferior to the Sewing-Model, as evidenced 
 
 Whatsoever, the linear fit in the Finishing-Model indicates that the prediction data increases linearly with the real data. Furthermore, the 0.62 correlation between the prediction data and the real data suggests that the model isn't all that bad. Therefore, it stands to reason that the Finishing-Model can be improved if more data is provided. <br>  
 
-By exploring the data, we know that the main difference between the Finishing-Model and the Sewing-Model is that all "wip" data is missing in the Finishing-Model.
-The result of poor fitting in the finising model indicates that "wip" is indeed a crucial variable that is highly correlated to employee productivity in the European garment industry.<br>
+Data exploration reveals that the main difference between the Finishing-Model and the Sewing-Model in terms of data structure is that the Finishing-Model lacks all "wip" data. The result of poor fitting in the finising model indicates that "wip" is indeed a crucial variable that is highly correlated to employee productivity in the European garment industry.<br>
 
-We can also check the other attributes/variables in a similar way. By drawing out the targeted variable from the training data, we train the model again, and observe the difference in the accuracy of prediction. <br>
+The other variables can also be checked in a similar mannerThe targeted variable is first removed from the training features. The model is then retrained, and its prediction accuracy is compared to that of the previous model.<br>
 
 Some may argue that the difference between the results of the Sewing-Model and the Finishing-Model may also be caused by the difference in team attributes(the mean productivity), but I actually did check this argument by using the same mean in both models. The Sewing-Model's prediction accuracy only differs a little, and the model I presented in the data pipeline is in fact marginally more accurate. This forces us to conclude that the missing wip data is the main cause of the inaccuracy of the Finishing-Model, if compared to the Sewing-Model.<br>
 
