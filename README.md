@@ -145,18 +145,18 @@ Below is the summary of the models:<br>
   
 #### 6.1.1. In the Raw Data
 Please focus on the "actual productivity" column.<br>
-<p align="center"><img width="800" height="600" src="Image/heatmap.raw.png"</p>
+<p align="center"><img width="800" height="600" src="Image/raw data heatmap.png"</p>
 
 #### 6.1.2. In the Post-Processing Data
 We see that the correlation between "team" and "actual productivity" has increased significantly.<br>
 Now we have more features which has non-zero correlation with "actual productivity" to train the model, including "date", "quarter", "day"(weekday), "month", and "day_no" (day in a month).<br>   
-<p align="center"><img width="800" height="600" src="Image/heatmap.post_training.png"></p>
+<p align="center"><img width="800" height="600" src="Image/Post-processing data(Sewing Model)heatmap.png"></p>
 
 #### 6.1.3. After Data Segmentation
 After data segmentation, the correlation between "incentive" and "actual productivity" become 10 times larger!<br>
 Also, the correlation between "actual productivity" with the features such as "wip", "team","no of style change","idle time", and "day_no" is further improved.<br>
 Despite there exists some minor decrease of the correlation between "actual productivity" with the features such as "no of worker", "month", and "day", the overall correlation betwwen the features and the "actual productivity" is greatly enhanced after the data segmentation.<br>
-<p align="center"><img width="800" height="600" src="Image/heatmap.post_segmentation.png"></p>
+<p align="center"><img width="800" height="600" src="Image/Final sewing data heatmap.png"></p>
 </details>
 
 ### 6.2. Correlation between Features and Labels (Finishing-Model)
@@ -180,9 +180,9 @@ We can see that all features has non-zero correlation with the label, this means
 <summary>click to show</summary><br>
 Performance of the model:
   
-<p align="left"><img src="Image/sewing_model.stats.png"></p>
+<p align="left"><img src="Image/Sewing Model Stats.png"></p>
 
-<p align="center"><img src="Image/sewing_model.plot.png"></p>
+<p align="center"><img src="Image/sewing model plot.png"></p>
 
 The shaded region is surrounded by a 95% confidence interval, within which we are 95% certain that the **mean value** of prediction lies.<br>
 This shall not be confused with the dotted line, which is the 95% prediction interval, within which 95% of our prediction data is contained.
@@ -202,7 +202,9 @@ Performance of the model:<br><br>
 <summary>click to show</summary><br>
 "All models are wrong, but some are useful."~<a href="https://en.wikipedia.org/wiki/All_models_are_wrong">George Box</a> <br><br>
 
-The Sewing-Model is reasonably well trained, as evidenced by its 96% correlation between its prediction and the actual data. The high correlation can be visually reflected in the plot(see section 6.3), as the 95%-confidence-interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.019 and a mean absolute percentage error of about 3%. <br> 
+The Sewing-Model is reasonably well trained, as evidenced by its 95% correlation between its prediction and the actual data. The high correlation can be visually reflected in the plot(see section 6.3), as the 95%-confidence-interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error(MAE) of 0.016(best model among 17 iterations) and a mean absolute percentage error of about 2.5%. The mean MAE of the Sewing-Model is about 0.02.<br>
+
+<p align="center"><img src="Image/Sewing Model MAE Distribution.png"></p>
 
 The Finishing-Model is significantly inferior to the Sewing-Model, as evidenced by its 62% correlation between its prediction and actual data. The plot (see section 6.4) clearly demonstrates this, as the 95%-confidence-interval does not pass through the origin and the majority of the prediction data appears less convergent. Besides, it has a validation mean absolute percentage error of 0.098 and a mean absolute percentage error of approximately 14%.<br>
 
