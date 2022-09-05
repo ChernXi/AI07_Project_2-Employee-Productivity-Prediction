@@ -36,11 +36,11 @@ You can get the dataset download link from <a href="http://archive.ics.uci.edu/m
 <details>
 <summary>click to show</summary><br>
   
-The data is collected from European country at the year of 2015.<br>
+The data was collected from European countries in the year of 2015.<br>
   
-There are 15 attributes in this dataset. We will make use of the first 14 attributes as the features, and use them to launch a multilinear regression traning by using a dense neural network. Our goal is to train out a model that can predict the actual productivity, which is the last attribute of the dataset, with our targeted mean absolute error percentage less than 10%.
+There are 15 attributes in this dataset. We will make use of the first 14 attributes as the raw features and use them to launch a multilinear regression training by using a dense neural network. Our goal is to train a model that can predict the actual productivity, which is the last attribute of the dataset, with a targeted mean absolute error percentage of less than 10%.<br>
 
-The 15 attributes in dataset are summarized as below.
+The 15 attributes in the dataset are summarized as below.<br>
 
 01 date : Date in MM-DD-YYYY <br>
 02 day : Day of the Week <br>
