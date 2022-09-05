@@ -214,7 +214,7 @@ The other variables can also be checked in a similar manner. The targeted variab
 
 Some may argue that the difference in results between the Sewing-Model and the Finishing-Model is due to differences in team attributes (the mean productivity), but I tested this theory by using the same mean in both models. The prediction accuracy of the Sewing-Model differs only slightly, and the model I presented in the data pipeline is actually marginally more accurate. This leads us to believe that the missing wip data is the primary cause of the inaccuracy of the Finishing-Model when compared to the Sewing-Model.<br>
 
-On the other hand, if there is an optimal value for the wip data, We can check this by generating some lists of sewing data with all attributes fixed but the wip value different. Then we make use of our fairly well fitted sewing data to predict the productivities of each entry in the list. Then we can gather the optimal value from all the lists to find its mean. This mean will be the overall optimal(ideal) value of the wip data.<br>
+On the other hand, if there were an optimal value for the wip data, We can check this by generating some lists of sewing data with all attributes fixed but the wip value different. Then we make use of our fairly well fitted sewing data to predict the productivities of each entry in the list. Then we can gather the optimal value from all the lists to find its mean. This mean will be the overall optimal(ideal) value of the wip data.<br>
 
 Why is it advantageous to obtain the optimal value of "wip" (work-in-progress) then? The work-in-progress could be distributed to other teams by the manager, ensuring that most teams have the right amount of work to do and can therefore maximize their production.<br>
 
