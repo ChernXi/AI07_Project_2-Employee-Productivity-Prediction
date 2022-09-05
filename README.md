@@ -139,7 +139,7 @@ Below is the summary of the models:<br>
 </details>
 
 ## 6. Result
-### 6.1. Correlation between Features and Labels (Sewing Model)
+### 6.1. Correlation between Features and Labels (Sewing-Model)
 <details>
 <summary>click to show</summary><br>
   
@@ -159,7 +159,7 @@ Despite there exists some minor decrease of the correlation between "actual prod
 <p align="center"><img width="800" height="600" src="Image/heatmap.post_segmentation.png"></p>
 </details>
 
-### 6.2. Correlation between Features and Labels (Finishing Model)
+### 6.2. Correlation between Features and Labels (Finishing-Model)
 <details>
 <summary>click to show</summary><br>
 
@@ -175,7 +175,7 @@ We can see that all features has non-zero correlation with the label, this means
 
 </details>
   
-### 6.3. Sewing Department Productivity Model
+### 6.3. Sewing Department Productivity Model (a.k.a Sewing-Model)
 <details>
 <summary>click to show</summary><br>
 Performance of the model:
@@ -188,7 +188,7 @@ The shaded region is surrounded by a 95% confidence interval, within which we ar
 This shall not be confused with the dotted line, which is the 95% prediction interval, within which 95% of our prediction data is contained.
 </details>
 
-### 6.4. Finishing Department Productivity Model
+### 6.4. Finishing Department Productivity Model (a.k.a Finishing-Model)
 <details>
 <summary>click to show</summary><br>
 Performance of the model:<br><br>
@@ -202,9 +202,9 @@ Performance of the model:<br><br>
 <summary>click to show</summary><br>
 "All models are wrong, but some are useful."~<a href="https://en.wikipedia.org/wiki/All_models_are_wrong">George Box</a> <br><br>
 
-The Sewing-Model is reasonably well trained, as evidenced by the 96% correlation between the prediction of the model and the actual data. The high correlation can be visually reflected in the plot(see section 6.3), as the 95%-confidence-interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.019 and a mean absolute percentage error of about 3%. <br> 
+The Sewing-Model is reasonably well trained, as evidenced by its 96% correlation between its prediction and the actual data. The high correlation can be visually reflected in the plot(see section 6.3), as the 95%-confidence-interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.019 and a mean absolute percentage error of about 3%. <br> 
 
-The Finishing model is much inferior to the Sewing model, as indicated by the 62% correlation between the prediction of the model and the actual data. This is clearly shown in the plot(see section 6.4) as the 95%-confidence-interval does not pass through the origin and the majority of the prediction data appears less convergent. Besides, it has a validation mean absolute percentage error of 0.098 and a mean absolute percentage error of about 14%.<br>
+The Finishing-Model is significantly inferior to the Sewing-Model, as evidenced by its 62% correlation between its prediction and actual data. The plot (see section 6.4) clearly demonstrates this, as the 95%-confidence-interval does not pass through the origin and the majority of the prediction data appears less convergent. Besides, it has a validation mean absolute percentage error of 0.098 and a mean absolute percentage error of approximately 14%.<br>
 
 Whatsoever, the linear fit in the Finishing-Model indicates that the prediction data increases linearly with the real data. Furthermore, the 0.62 correlation between the prediction data and the real data suggests that the model isn't all that bad. Therefore, it stands to reason that the Finishing-Model can be improved if more data is provided. <br>  
 
