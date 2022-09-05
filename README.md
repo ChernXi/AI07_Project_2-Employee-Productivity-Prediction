@@ -88,7 +88,7 @@ The differences between the models all stem from their data pipeline, as summari
   </tr>
   <tr>
     <th>input data</th><td align="center">Sewing department data</td>
-    <td align="center"> finishing department training data + all sewing department data</td>
+    <td align="center">Finishing department training data + all sewing department data</td>
   </tr>
   <tr>
     <th>typo of column name</th><td align="center">Replace ["Sweing", "Finishing "] by ["Sewing","Finishing"] </td><td align="center">Same</td>
