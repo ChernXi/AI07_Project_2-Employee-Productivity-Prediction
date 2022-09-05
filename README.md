@@ -221,7 +221,7 @@ Why is it advantageous to obtain the optimal value of "wip" (work-in-progress) t
 However, a general optimal "wip" value is less likely to exist, because its optimal value is the collective result of all other data. We can, in turn, build a model that uses the "wip" as the label and "actual productivity"(wishful productivity) as one of the features. Then we are able to obtain the optimal "wip" value for a specific employee group.<br>  
 </details>
 
-## 7. Conclusion
+## 8. Conclusion
 <details>
 <summary>click to show</summary><br>
   
@@ -230,8 +230,18 @@ We have successfully created a good model(the Sewing-Model) with high validation
 The Finishing-Model, on the other hand, may be unsatisfactory with a validation mean absolute percentage error of 14%, but as we can see from the graph, it is not completely useless because we are 95% certain that the real data will fall within a certain interval. For example, if the prediction of productivity is 1.0, we are 95% sure that the actual data falls between 0.65 and 1.21, so it can be a good estimate. More data, in particular the "wip" data, is required to build a better model.<br>
 </details>
 
+## 9. Future Work
+<details>
+<summary>click to show</summary><br>
 
+Are the two models the best we can create with the data we currently have? <br>
+Definitely not! <br>
+For instance, one might think of defining a new feature that tracks the work intensity (let's say, smv*average overtime) of a certain team over the last few days. <br>
+This will undoubtedly aid in the creation of a better model. <br>
+So this project comes to an end here. <br>
+Thank you for your time and I hope you find the reading enjoyable. :-) <br>
 
+</details>
 
 
 
