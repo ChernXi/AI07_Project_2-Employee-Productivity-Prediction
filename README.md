@@ -202,9 +202,9 @@ Performance of the model:<br><br>
 <summary>click to show</summary><br>
 "All models are wrong, but some are useful."~<a href="https://en.wikipedia.org/wiki/All_models_are_wrong">George Box</a> <br><br>
 
-The Sewing-Model is reasonably well trained, as evidenced by the 95% confidence interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.019 and a mean absolute percentage error of about 3%. <br> 
+The Sewing-Model is reasonably well trained, as evidenced by the 96% correlation between the prediction of the model and the actual data. The high correlation can be visually reflected in the plot(see section 6.3), as the 95%-confidence-interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.019 and a mean absolute percentage error of about 3%. <br> 
 
-The Finishing-Model is much inferior to the Sewing model because the 95% confidence interval does not pass through the origin and the majority of the prediction data appears less convergent. Besides, it has a validation mean absolute percentage error of 0.098 and a mean absolute percentage error of about 14%.<br>
+The Finishing model is much inferior to the Sewing model, as indicated by the 62% correlation between the prediction of the model and the actual data. This is clearly shown in the plot(see section 6.4) as the 95%-confidence-interval does not pass through the origin and the majority of the prediction data appears less convergent. Besides, it has a validation mean absolute percentage error of 0.098 and a mean absolute percentage error of about 14%.<br>
 
 Whatsoever, the linear fit in the Finishing-Model indicates that the prediction data increases linearly with the real data. Furthermore, the 0.62 correlation between the prediction data and the real data suggests that the model isn't all that bad. Therefore, it stands to reason that the Finishing-Model can be improved if more data is provided. <br>  
 
