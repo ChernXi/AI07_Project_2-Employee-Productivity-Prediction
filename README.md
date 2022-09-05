@@ -5,9 +5,9 @@
 
 The garment industry is vital to human civilization and has a massive global demand.<br>
 
-To estimate their garment production capacity and ensure that production is completed on time, large garment production companies must track, analyse, and predict the productivity of their working teams. This is crucial in order to maintain the company's reputation and avoid paying breach of contract penalties.<br>
+A modern garment production companies must track, analyse, and predict the productivity of their working teams in order to estimate their garment production capacity and ensure that production is completed on time. This is crucial in maintaining the company's reputation and avoid paying breach of contract penalties.<br>
 
-Furthermore, a good prediction model is essential in the future development of the garment company because it provides the information to streamline production lines and optimize production efficiency.<br>
+Furthermore, a good prediction model is an essential tool in the development planning of a garment company because it provides the information to streamline the production lines and optimize the production efficiency.<br>
 
 </details>
 
@@ -27,7 +27,7 @@ Furthermore, a good prediction model is essential in the future development of t
   
 ## 3. The Garment Employee Dataset
 ### 3.1. Download link
-<details open>
+<details>
 <summary>click to show</summary>
 You can get the dataset download link from <a href="http://archive.ics.uci.edu/ml/datasets/Productivity+Prediction+of+Garment+Employees">here</a>.
 </details>
@@ -60,7 +60,7 @@ The 15 attributes in dataset are summarized as below.
 </details>
 
 ## 4. IDE, Framework, and Code
-<details open>
+<details>
 <summary>click to show</summary><br>
 <a href="http://colab.research.google.com/">Google Colab</a> is used as the IDE(integrated development environment) for this project.<br>
 The main frameworks utilised in this project were TensorFlow Keras, Pandas, Numpy, Scikit-Learn, Seaborn, and Matplotlib.<br><br>
@@ -95,9 +95,6 @@ The differences between the models all stem from their data pipeline, as summari
   </tr>
   <tr>
     <th>typo of data value</th><td align="center">Replace "targeted_productivity" of index 663 from 0.07 to 0.7</td><td align="center">Same</td>
-  </tr>
-  <tr>
-    <th>average_ot</th><td align="center">(new_features)divided the overtime by no of workers</td><td align="center">Same</td>
   </tr>
   <tr>
     <th>average_smv</th><td align="center">(new_features)divided the smv by no of workers</td><td align="center">Same</td>
@@ -179,7 +176,7 @@ We can see that all features has non-zero correlation with the label, this means
 </details>
   
 ### 6.3. Sewing Department Productivity Model
-<details open>
+<details>
 <summary>click to show</summary><br>
 Performance of the model:
   
@@ -205,9 +202,9 @@ Performance of the model:<br><br>
 <summary>click to show</summary><br>
 "All models are wrong, but some are useful."~<a href="https://en.wikipedia.org/wiki/All_models_are_wrong">George Box</a> <br><br>
 
-The Sewing-Model is reasonably well fitted, as evidenced by the 95% confidence interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.019 and a mean absolute percentage error of about 3%. <br> 
+The Sewing-Model is reasonably well trained, as evidenced by the 95% confidence interval passing through the origin, and the majority of the prediction data converged to a straight line. It also has a validation mean absolute percentage error of 0.019 and a mean absolute percentage error of about 3%. <br> 
 
-The Finishing-Model does not fit well because the 95% confidence interval does not pass through the origin and the majority of the prediction data appears less convergent. Besides, it has a validation mean absolute percentage error of 0.098 and a mean absolute percentage error of about 14%.<br>
+The Finishing-Model is much inferior to the Sewing model because the 95% confidence interval does not pass through the origin and the majority of the prediction data appears less convergent. Besides, it has a validation mean absolute percentage error of 0.098 and a mean absolute percentage error of about 14%.<br>
 
 Whatsoever, the linear fit in the Finishing-Model indicates that the prediction data increases linearly with the real data. Furthermore, the 0.62 correlation between the prediction data and the real data suggests that the model isn't all that bad. Therefore, it stands to reason that the Finishing-Model can be improved if more data is provided. <br>  
 
@@ -225,7 +222,7 @@ Why is it advantageous to obtain the optimal value of "wip" (work-in-progress) t
 However, a general optimal "wip" value is less likely to exist, because the optimal value is the collective result of all other data. We can, in turn, build a model that uses the "wip" as the label and "actual productivity"(wishful productivity) as one of the features. Then we are able to obtain the optimal "wip" value for a specific employee group.<br>  
 </details>
 
-## Conclusion
+## 7. Conclusion
 <details>
 <summary>click to show</summary><br>
   
