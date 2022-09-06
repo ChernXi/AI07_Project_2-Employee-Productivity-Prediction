@@ -128,7 +128,7 @@ The differences between the models all stem from their data pipeline, as summari
     <th>train_test_split</th><td align="center">Test_size = 0.2</td>
     <td align="center">Test_size = 0.1 (a small test size is used due to the lacking of data)</td>
   </tr>
-</table><br>
+</table>
 </details>
 
 ### 5.2. Models' pipeline 
@@ -153,13 +153,16 @@ Please focus on the "actual productivity" column.<br>
 #### 6.1.2. In the Post-Processing Data
 We see that the correlation between "team" and "actual productivity" has increased significantly.<br>
 Now we have more features which has non-zero correlation with "actual productivity" to train the model, including "date", "quarter", "day"(weekday), "month", and "day_no" (day in a month).<br>   
-<p align="center"><img width="800" height="600" src="Image/Post-processing data(Sewing Model)heatmap.png"></p>
+  
+<p align="center"><img width="1000" height="750" src="Image/Post-processing data(Sewing Model)heatmap.png"></p>
 
 #### 6.1.3. After Data Segmentation
 After data segmentation, the correlation between "incentive" and "actual productivity" become 10 times larger!<br>
 Also, the correlation between "actual productivity" with the features such as "wip", "team","no of style change","idle time", and "day_no" is further improved.<br>
 Despite there exists some minor decrease of the correlation between "actual productivity" with the features such as "no of worker", "month", and "day", the overall correlation betwwen the features and the "actual productivity" is greatly enhanced after the data segmentation.<br>
-<p align="center"><img width="800" height="600" src="Image/Final sewing data heatmap.png"></p>
+  
+<p align="center"><img width="1200" height="900" src="Image/Final sewing data heatmap.png"></p>
+
 </details>
 
 ### 6.2. Correlation between Features and Labels (Finishing-Model)
@@ -170,10 +173,12 @@ Despite there exists some minor decrease of the correlation between "actual prod
 The correlations in the raw data are in 6.1.1.<br>
 Here we can see that after we process the data, we have more features to train the model, and the correlation between "team" and "actual productivity" has increased significantly.<br>
 However, since all "wip" data from the finishing department are single-valued, the correlation between it with the multi-valued actual productivity is zero.<br>
+
 <p align="center"><img width="800" height="600" src="Image/finishing_heatmap_dense.png"></p>
   
 ### 6.2.2 In All Training Data in the Finishing Model
 We can see that all features has non-zero correlation with the label, this means they are contributive to enhance the accuracy of the model.<br>
+
 <p align="center"><img width="800" height="600" src="Image/finishing_training_data_heatmap.png"></p>
 
 </details>
