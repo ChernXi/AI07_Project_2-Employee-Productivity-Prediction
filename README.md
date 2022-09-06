@@ -97,7 +97,10 @@ The differences between the models all stem from their data pipeline, as summari
     <th>typo of data value</th><td align="center">Replace "targeted_productivity" of index 663 from 0.07 to 0.7</td><td align="center">Same</td>
   </tr>
   <tr>
-    <th>average_smv</th><td align="center">(new_features)divided the smv by no of workers</td><td align="center">Same</td>
+    <th>average_smv</th><td align="center">A new feature that obtained by dividing the smv by no of workers</td><td align="center">Same</td>
+  </tr>
+  <tr>
+    <th>average_ot</th><td align="center">A new feature that obtained by dividing the overtime by no of workers</td><td align="center">Same</td>
   </tr>
   <tr>
     <th>wip(work in progress)</th><td align="center">Use the log function to reduce the skewness of the data</td><td align="center">The "wip" data is divided into four groups in order to keep the actual value of the finishing department within the margin of error. (It can be non-zero while still belonging to the lowest value group.)</td>
@@ -112,10 +115,10 @@ The differences between the models all stem from their data pipeline, as summari
     <th>quarter(index of week in a month)</th><td align="center">Changed to integers</td><td align="center">Same</td>
   </tr>
   <tr>
-    <th>month(/th)<td align="center">(new_features)Extracted from the date</td><td align="center">Same</td>
+    <th>month(/th)<td align="center">A new feature that extracted from the date</td><td align="center">Same</td>
   </tr>
   <tr>
-    <th>day(in months)</th><td align="center">(new_features)Extracted from the date</td><td align="center">Same</td>
+    <th>day(in months)</th><td align="center">A new feature that extracted from the date</td><td align="center">Same</td>
   </tr>
   <tr>
     <th>team</th><td align="center">Replaced by the average productivity of the corresponding sewing team</td>
@@ -141,7 +144,7 @@ Below is the summary of the models:<br>
 ## 6. Result
 ### 6.1. Correlation between Features and Labels (Sewing-Model)
 <details>
-<summary>click to show</summary><br>
+<summary>click to show</summary>
   
 #### 6.1.1. In the Raw Data
 Please focus on the "actual productivity" column.<br>
@@ -161,7 +164,7 @@ Despite there exists some minor decrease of the correlation between "actual prod
 
 ### 6.2. Correlation between Features and Labels (Finishing-Model)
 <details>
-<summary>click to show</summary><br>
+<summary>click to show</summary>
 
 ### 6.2.1 In the Finishing Department Data after Data Pre-Processing and Data Segmentation 
 The correlations in the raw data are in 6.1.1.<br>
@@ -177,7 +180,7 @@ We can see that all features has non-zero correlation with the label, this means
   
 ### 6.3. Sewing Department Productivity Model (a.k.a Sewing-Model)
 <details>
-<summary>click to show</summary><br>
+<summary>click to show</summary>
 Performance of the model:
   
 <p align="left"><img src="Image/Sewing Model Stats.png"></p>
@@ -190,8 +193,8 @@ This shall not be confused with the dotted line, which is the 95% prediction int
 
 ### 6.4. Finishing Department Productivity Model (a.k.a Finishing-Model)
 <details>
-<summary>click to show</summary><br>
-Performance of the model:<br><br>
+<summary>click to show</summary>
+Performance of the model:
 <p align="left"><img src="Image/finishing_model_stats.png"></p>
 
 <p align="center"><img src="Image/finishing_model_plot.png"></p>
