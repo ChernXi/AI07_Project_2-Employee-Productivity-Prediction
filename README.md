@@ -70,6 +70,8 @@ My code: <br>
 A.  [Sewing Department Productivity Model](Sewing_Model.ipynb) <br>
 
 B.  [Finishing Department Productivity Model](Finishing_Model.ipynb) <br>
+
+C.  [simplified-finishing department model](SimpleFinishing.py) <br> 
 </details>
 
 ## 5. Methodology
