@@ -83,8 +83,8 @@ dict_sewing = {i+1 : list_sewing[i] for i in range(12)}
 
 # Use the dict_finishing and dict_sewing to transfrom the data 
 for i in range(12):
-    sewing_data['team'] = sewing_data['team'].replace([i+1], dict_sewing[i+1])
-    finishing_data['team'] = finishing_data['team'].replace([i+1], dict_finishing[i+1])
+  sewing_data['team'] = sewing_data['team'].replace([i+1], dict_sewing[i+1])
+  finishing_data['team'] = finishing_data['team'].replace([i+1], dict_finishing[i+1])
 print("10. Tranform the value of 'team' from number to average productivity of the corresponding team.")
 
 # Define the features and the labels
