@@ -1,5 +1,3 @@
-# If cannot run, then you need to install pytorch-tabnet to you local machine: pip install pytorch-tabnet 
-
 import time
 initial_time = time.time() 
 
@@ -148,3 +146,5 @@ total_time_used = final_time - initial_time
 print()
 print("total_time_used = {}".format(total_time_used))
 print()
+
+# If cannot run, then you need to install pytorch-tabnet to you local machine: pip install pytorch-tabnet 
