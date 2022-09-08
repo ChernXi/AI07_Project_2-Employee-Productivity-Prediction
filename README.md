@@ -246,12 +246,12 @@ The Finishing-Model, on the other hand, may be unsatisfactory with a validation 
 <details>
 <summary>click to show</summary>
 
-### 8th September: 2022 <br>
+### 8th September 2022: <br>
 Using the idea of "stacking" in constructing finishing model.<br>
 First, fill in the missing "wip" data in finishing department by using the model constructed by Sewing Department Data.<br>
 Then, train the finishing department data with predicted wip data as one of the features to predict the actual productivity.<br>
 The average MAE is reduced by an amount of 0.005~0.008 and the correlation betwwen the predicted productivity and actual productivity has been increased to 0.78.<br>
-[Code of this model](Artificial_Stacking_Employee_Productivity_Prediction.ipynb)<br>
+[<h3> Code of this model </h3>](Artificial_Stacking_Employee_Productivity_Prediction.ipynb)<br>
 <p align="center"><img src="Image/Artificial Stacking Sewing Model Plot.png"></p>
 
 </details>
