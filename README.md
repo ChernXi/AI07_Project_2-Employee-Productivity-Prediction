@@ -242,16 +242,15 @@ We have successfully created a good model(the Sewing-Model) with high validation
 The Finishing-Model, on the other hand, may be unsatisfactory with a validation mean absolute percentage error of 14%, but as we can see from the graph, it is not completely useless because we are 95% certain that the real data will fall within a certain interval. For example, if the prediction of productivity is 1.0, we are 95% sure that the actual data falls between 0.65 and 1.21, so it can be a good estimate. More data, in particular the "wip" data, is required to build a better model.<br>
 </details>
 
-## 9. Future Work
+## 9. Subsequent Updates
 <details>
 <summary>click to show</summary><br>
 
-Are the two models the best we can create with the data we currently have? <br>
-Definitely not! <br>
-For instance, one might think of defining a new feature that tracks the work intensity (let's say, smv*average overtime) of a certain team over the last few days. <br>
-This will undoubtedly aid in the creation of a better model. <br>
-So this project comes to an end here. <br>
-Thank you for your time and I hope you find the reading enjoyable. :-) <br>
+### 8th September: 2022 <br>
+Using the idea of "stacking" in constructing finishing model.
+First, fill in the missing "wip" data in finishing department by using the model constructed by Sewing Department Data.
+Then, train the finishing department data with predicted wip data as one of the features to predict the actual productivity.
+The average MAE is significantly reduced by an amount of 0.05~0.08.
 
 </details>
 
