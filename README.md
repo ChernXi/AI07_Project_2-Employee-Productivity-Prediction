@@ -244,13 +244,13 @@ The Finishing-Model, on the other hand, may be unsatisfactory with a validation 
 
 ## 9. Subsequent Updates
 <details>
-<summary>click to show</summary><br>
+<summary>click to show</summary>
 
 ### 8th September: 2022 <br>
-Using the idea of "stacking" in constructing finishing model.
-First, fill in the missing "wip" data in finishing department by using the model constructed by Sewing Department Data.
-Then, train the finishing department data with predicted wip data as one of the features to predict the actual productivity.
-The average MAE is significantly reduced by an amount of 0.05~0.08.
+Using the idea of "stacking" in constructing finishing model.<br>
+First, fill in the missing "wip" data in finishing department by using the model constructed by Sewing Department Data.<br>
+Then, train the finishing department data with predicted wip data as one of the features to predict the actual productivity.<br>
+The average MAE is reduced by an amount of 0.005~0.008 and the correlation betwwen the predicted productivity and actual productivity has been increased to 0.78.  
 
 </details>
 
